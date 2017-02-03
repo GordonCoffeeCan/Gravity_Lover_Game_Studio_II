@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour {
         if(_tag == "Player1") {
             _rig.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, Physics2D.gravity.y);
         }else if(_tag == "Player2") {
-            _rig.velocity = new Vector2(Input.GetAxis("Horizontal") * speed, -Physics2D.gravity.y);
+            _rig.velocity = new Vector2(Input.GetAxis("GamePad_H") * speed, -Physics2D.gravity.y);
         }
         
     }
