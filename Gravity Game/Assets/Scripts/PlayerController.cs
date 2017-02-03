@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        //Detact which player is and set control scheme
+        //Detect which player is and set control scheme
         if (_tag == "Player1") {
             _gravityScale = 1;
             _directionPad = "Horizontal";
@@ -47,12 +47,18 @@ public class PlayerController : MonoBehaviour {
 
     //Check the player is on the ground or not;
     private void OnCollisionEnter2D(Collision2D _col) {
+        if (_col.gameObject.tag == "Untagged") {
+            Debug.LogWarning("Ground Object is not tagged. Some script may not work!");
+        }
         if(_col.gameObject.tag == "Ground") {
             isGournd = true;
         }
     }
 
     private void OnCollisionExit2D(Collision2D _col) {
+        if (_col.gameObject.tag == "Untagged") {
+            Debug.LogWarning("Ground Object is not tagged. Some script may not work!");
+        }
         if (_col.gameObject.tag == "Ground") {
             isGournd = false;
         }

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class gravityTrigger : MonoBehaviour {
+public class GravityTrigger : MonoBehaviour {
 
     public Transform self;
     public Transform other;
@@ -14,27 +14,33 @@ public class gravityTrigger : MonoBehaviour {
 
     private bool canShift = false;
 
-    public KeyCode shiftButton = KeyCode.LeftShift;
+    private string _gravityShiftKey;
 
-
+    private string _tag;
     public Rigidbody2D rb;
 
-	// Use this for initialization
-	void Start () {
-
+    private void Awake() {
+        _tag = this.gameObject.tag;
         
+    }
+
+    // Use this for initialization
+    void Start () {
+        //Detect which player is and set control scheme
+        if (_tag == "Player1") {
+            _gravityShiftKey = "ShiftButton";
+        } else if (_tag == "Player2") {
+            _gravityShiftKey = "GamePad_Shift";
+        }
     }
 	
 	// Update is called once per frame
 	void Update () {
-
         distance = Vector3.Distance(self.position, other.position);
         
-
         inRange();
 
         gravityShift();
-       
 	}
 
     void inRange()
@@ -54,7 +60,7 @@ public class gravityTrigger : MonoBehaviour {
 
     void gravityShift()
     {
-        if (Input.GetKeyUp(shiftButton))
+        if (Input.GetButtonUp(_gravityShiftKey))
         {
             if(canShift == true)
             {
