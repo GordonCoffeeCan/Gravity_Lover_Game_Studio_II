@@ -39,7 +39,10 @@ public class PlayerController : MonoBehaviour {
 	}
 
     private void FixedUpdate() {
-        _rig.velocity = new Vector2(Input.GetAxis(_directionPad) * speed, _rig.velocity.y);
+        if(isGournd == true) {
+            _rig.velocity = new Vector2(Input.GetAxis(_directionPad) * speed, _rig.velocity.y);
+        }
+        
         if (Input.GetButtonDown(_jumpPad) && isGournd == true) {
             _rig.AddForce(new Vector2(_rig.velocity.x, jump * _gravityScale), ForceMode2D.Impulse);
         }
