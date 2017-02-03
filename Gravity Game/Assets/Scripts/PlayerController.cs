@@ -6,9 +6,13 @@ public class PlayerController : MonoBehaviour {
     public float speed = 10;
     public float jump = 5;
 
+    public static int jumpDirection;
+
     private Rigidbody2D _rig;
     private string _tag;
     private int _gravityScale = 0;
+
+    private string _gravityShiftKey;
 
     private string _directionPad;
     private string _jumpPad;
@@ -26,10 +30,12 @@ public class PlayerController : MonoBehaviour {
             _gravityScale = 1;
             _directionPad = "Horizontal";
             _jumpPad = "Jump";
+            _gravityShiftKey = "ShiftButton";
         } else if (_tag == "Player2") {
             _gravityScale = -1;
             _directionPad = "GamePad_H";
             _jumpPad = "GamePad_Jump";
+            _gravityShiftKey = "GamePad_Shift";
         }
     }
 	
@@ -46,24 +52,27 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetButtonDown(_jumpPad) && isGournd == true) {
             _rig.AddForce(new Vector2(_rig.velocity.x, jump * _gravityScale), ForceMode2D.Impulse);
         }
+
+        if (Input.GetButtonUp(_gravityShiftKey)) {
+            if (GravityTrigger.canShift == true) {
+                _gravityScale *= -1;
+                _rig.gravityScale *= -1;
+            }
+        }
     }
 
     //Check the player is on the ground or not;
-    private void OnCollisionEnter2D(Collision2D _col) {
+    private void OnCollisionStay2D(Collision2D _col) {
         if (_col.gameObject.tag == "Untagged") {
             Debug.LogWarning("Ground Object is not tagged. Some script may not work!");
         }
-        if(_col.gameObject.tag == "Ground") {
-            isGournd = true;
-        }
+        isGournd = true;
     }
 
     private void OnCollisionExit2D(Collision2D _col) {
         if (_col.gameObject.tag == "Untagged") {
             Debug.LogWarning("Ground Object is not tagged. Some script may not work!");
         }
-        if (_col.gameObject.tag == "Ground") {
-            isGournd = false;
-        }
+        isGournd = false;
     }
 }
