@@ -21,8 +21,9 @@ public class gravityTrigger : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -32,7 +33,7 @@ public class gravityTrigger : MonoBehaviour {
 
         inRange();
 
-
+        gravityShift();
        
 	}
 
@@ -53,7 +54,7 @@ public class gravityTrigger : MonoBehaviour {
 
     void gravityShift()
     {
-        if (Input.GetKeyDown(shiftButton))
+        if (Input.GetKeyUp(shiftButton))
         {
             if(canShift == true)
             {
