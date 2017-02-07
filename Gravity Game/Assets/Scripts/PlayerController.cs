@@ -44,8 +44,13 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (Input.GetButtonUp(_gravityShiftKey)) {
+            if (GravityTrigger.canShift == true) {
+                _gravityScale *= -1;
+                _rig.gravityScale *= -1;
+            }
+        }
+    }
 
     private void FixedUpdate() {
         if(isGournd == true) {
@@ -55,14 +60,8 @@ public class PlayerController : MonoBehaviour {
         }
 
         if (Input.GetButtonDown(_jumpPad) && isGournd == true) {
+            Debug.Log("Jump 1 time");
             _rig.AddForce(new Vector2(_rig.velocity.x, jump * _gravityScale), ForceMode2D.Impulse);
-        }
-
-        if (Input.GetButtonUp(_gravityShiftKey)) {
-            if (GravityTrigger.canShift == true) {
-                _gravityScale *= -1;
-                _rig.gravityScale *= -1;
-            }
         }
     }
 
