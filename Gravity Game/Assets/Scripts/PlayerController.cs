@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour {
             _gravityShiftKey = "GamePad_Shift";
         }
 
-        inAirSpeed = speed * 0.5f;
+        inAirSpeed = speed * 0.8f;
     }
 	
 	// Update is called once per frame
