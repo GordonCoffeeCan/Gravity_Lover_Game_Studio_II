@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour {
             _gravityShiftKey = "GamePad_Shift";
         }
 
-        inAirSpeed = speed * 0.8f;
+        inAirSpeed = speed * 0.5f;
     }
 	
 	// Update is called once per frame
@@ -60,7 +60,6 @@ public class PlayerController : MonoBehaviour {
         }
 
         if (Input.GetButtonDown(_jumpPad) && isGournd == true) {
-            Debug.Log("Jump 1 time");
             _rig.AddForce(new Vector2(_rig.velocity.x, jump * _gravityScale), ForceMode2D.Impulse);
         }
     }
