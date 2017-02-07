@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
     public float speed = 10;
+    public float inAirSpeed;
     public float jump = 5;
 
     public static int jumpDirection;
@@ -37,6 +38,8 @@ public class PlayerController : MonoBehaviour {
             _jumpPad = "GamePad_Jump";
             _gravityShiftKey = "GamePad_Shift";
         }
+
+        inAirSpeed = speed * 0.5f;
     }
 	
 	// Update is called once per frame
@@ -47,8 +50,10 @@ public class PlayerController : MonoBehaviour {
     private void FixedUpdate() {
         if(isGournd == true) {
             _rig.velocity = new Vector2(Input.GetAxis(_directionPad) * speed, _rig.velocity.y);
+        } else {
+            _rig.velocity = new Vector2(Input.GetAxis(_directionPad) * inAirSpeed, _rig.velocity.y);
         }
-        
+
         if (Input.GetButtonDown(_jumpPad) && isGournd == true) {
             _rig.AddForce(new Vector2(_rig.velocity.x, jump * _gravityScale), ForceMode2D.Impulse);
         }
