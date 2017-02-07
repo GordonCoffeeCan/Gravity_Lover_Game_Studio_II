@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
     private string _directionPad;
     private string _jumpPad;
     private bool isGournd = false;
+    private bool isAgainstWall = false;
 
     private void Awake() {
         _rig = this.GetComponent<Rigidbody2D>();
@@ -59,6 +60,10 @@ public class PlayerController : MonoBehaviour {
             _rig.velocity = new Vector2(Input.GetAxis(_directionPad) * inAirSpeed, _rig.velocity.y);
         }
 
+        if(isAgainstWall == true) {
+            //_rig.velocity = new Vector2(Input.GetAxis(_directionPad) * 0, _rig.velocity.y);
+        }
+
         if (Input.GetButtonDown(_jumpPad) && isGournd == true) {
             _rig.AddForce(new Vector2(_rig.velocity.x, jump * _gravityScale), ForceMode2D.Impulse);
         }
@@ -69,13 +74,25 @@ public class PlayerController : MonoBehaviour {
         if (_col.gameObject.tag == "Untagged") {
             Debug.LogWarning("Ground Object is not tagged. Some script may not work!");
         }
-        isGournd = true;
+        if(_col.gameObject.tag == "Ground") {
+            isGournd = true;
+        }
+        
+        if(_col.gameObject.tag == "Wall") {
+            //isAgainstWall = true;
+        }
     }
 
     private void OnCollisionExit2D(Collision2D _col) {
         if (_col.gameObject.tag == "Untagged") {
             Debug.LogWarning("Ground Object is not tagged. Some script may not work!");
         }
-        isGournd = false;
+        if (_col.gameObject.tag == "Ground") {
+            isGournd = false;
+        }
+
+        if (_col.gameObject.tag == "Wall") {
+            //isAgainstWall = false;
+        }
     }
 }
