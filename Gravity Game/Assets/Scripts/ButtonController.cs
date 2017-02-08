@@ -6,7 +6,9 @@ public class ButtonController : MonoBehaviour {
     //public GameObject leftDoor;
     //public Material colorChange;
 
-    public Animator elevator;
+    public Animator elevatorAnim;
+    public Renderer door;
+    public Animator doorAnim;
 
     private string objectName;
     private Animator buttonAnim;
@@ -21,7 +23,23 @@ public class ButtonController : MonoBehaviour {
 
 	}
 
-	private void OnCollisionEnter2D(Collision2D _col) {
+    private void Update() {
+        if(GameData.greenDoorisActivate == true && GameData.redDoorisActivate == true) {
+            if(doorAnim != null) {
+                doorAnim.SetBool("isOpen", true);
+            }
+
+            GameData.isWin = true;
+        }
+
+        if(GameData.bottomElevatorisActivate == true && GameData.topElevatorisActivate == true) {
+            if(elevatorAnim != null) {
+                elevatorAnim.SetBool("isActivated", true);
+            }
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D _col) {
 
         //leftDoor.GetComponent<MeshRenderer> ().material = colorChange;
 
@@ -36,12 +54,24 @@ public class ButtonController : MonoBehaviour {
 
     private void ActivateElevator() {
         buttonAnim.SetBool("isPressed", true);
-        elevator.GetComponent<Animator>().SetBool("isActivated", true);
+        if(objectName == "GreenBtn_Elevator") {
+            GameData.bottomElevatorisActivate = true;
+        }else if (objectName == "RedBtn_Elevator") {
+            GameData.topElevatorisActivate = true;
+        }
     }
 
     private void ActivateDoor() {
         //Do something for the door here!
         Debug.Log("Door Activated!");
         buttonAnim.SetBool("isPressed", true);
+
+        if(objectName == "GreenBtn_Door") {
+            door.material.color = Color.green;
+            GameData.greenDoorisActivate = true;
+        }else if (objectName == "RedBtn_Door") {
+            door.material.color = Color.red;
+            GameData.redDoorisActivate = true;
+        }
     }
 }
