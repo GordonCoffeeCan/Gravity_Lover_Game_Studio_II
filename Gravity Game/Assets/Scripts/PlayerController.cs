@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour {
     private string _directionPad;
     private string _jumpPad;
     private bool isGournd = false;
-    private bool isAgainstWall = false;
 
     private void Awake() {
         _rig = this.GetComponent<Rigidbody2D>();
@@ -40,7 +39,7 @@ public class PlayerController : MonoBehaviour {
             _gravityShiftKey = "GamePad_Shift";
         }
 
-        inAirSpeed = speed * 0.5f;
+        inAirSpeed = speed * 0.8f;
     }
 	
 	// Update is called once per frame
@@ -51,6 +50,10 @@ public class PlayerController : MonoBehaviour {
                 _rig.gravityScale *= -1;
             }
         }
+
+        if (Input.GetButtonDown(_jumpPad) && isGournd == true) {
+            _rig.AddForce(new Vector2(_rig.velocity.x, jump * _gravityScale), ForceMode2D.Impulse);
+        }
     }
 
     private void FixedUpdate() {
@@ -58,14 +61,6 @@ public class PlayerController : MonoBehaviour {
             _rig.velocity = new Vector2(Input.GetAxis(_directionPad) * speed, _rig.velocity.y);
         } else {
             _rig.velocity = new Vector2(Input.GetAxis(_directionPad) * inAirSpeed, _rig.velocity.y);
-        }
-
-        if(isAgainstWall == true) {
-            //_rig.velocity = new Vector2(Input.GetAxis(_directionPad) * 0, _rig.velocity.y);
-        }
-
-        if (Input.GetButtonDown(_jumpPad) && isGournd == true) {
-            _rig.AddForce(new Vector2(_rig.velocity.x, jump * _gravityScale), ForceMode2D.Impulse);
         }
     }
 
@@ -77,10 +72,6 @@ public class PlayerController : MonoBehaviour {
         if(_col.gameObject.tag == "Ground") {
             isGournd = true;
         }
-        
-        if(_col.gameObject.tag == "Wall") {
-            //isAgainstWall = true;
-        }
     }
 
     private void OnCollisionExit2D(Collision2D _col) {
@@ -89,10 +80,6 @@ public class PlayerController : MonoBehaviour {
         }
         if (_col.gameObject.tag == "Ground") {
             isGournd = false;
-        }
-
-        if (_col.gameObject.tag == "Wall") {
-            //isAgainstWall = false;
         }
     }
 }
