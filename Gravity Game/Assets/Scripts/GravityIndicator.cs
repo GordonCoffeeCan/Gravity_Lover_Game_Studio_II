@@ -34,7 +34,7 @@ public class GravityIndicator : MonoBehaviour {
             }
            
         }
-        else
+        else if (_playerRB.gravityScale > 0)
         {
             if (_facingUp == false)
             {
@@ -43,7 +43,9 @@ public class GravityIndicator : MonoBehaviour {
             }
 
         }
-        
 
-	}
+
+
+
+    }
 }
