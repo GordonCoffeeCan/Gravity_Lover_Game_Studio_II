@@ -115,6 +115,13 @@ public class PlayerHoveringController : MonoBehaviour {
     private void NotReadyToShiftGravity() {
         GameData.isPlayer1ReadytoHover = false;
         GameData.isPlayer2ReadytoHover = false;
+
+        if (_tag == "Player1") {
+            _rig.gravityScale = GameData.player1CurrentGravityScale;
+        }else if (_tag == "Player2") {
+            _rig.gravityScale = GameData.player1CurrentGravityScale * -1;
+        }
+
         _playerEffect.gameObject.SetActive(false);
     }
 }
