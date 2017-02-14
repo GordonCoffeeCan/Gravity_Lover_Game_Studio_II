@@ -8,11 +8,14 @@ public class GravityTrigger : MonoBehaviour {
     public Transform other;
     private float distance;
 
-    public float range; //how close the objects need to be to each other to gravity shift
+    public float range; //how close the objects need to be to each other to gravity shift;
+    public float minRange; //how close the players will stop moving toward from each other;
 
     public Light glow;
 
     public static bool inShiftRange = false;
+
+    public static Vector3 middlePoint;
 
     private string _tag;
     public Rigidbody2D rb;
@@ -29,6 +32,7 @@ public class GravityTrigger : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         distance = Vector3.Distance(self.position, other.position);
+        middlePoint = (self.position - other.position) / 2;
         inRange();
 	}
 
