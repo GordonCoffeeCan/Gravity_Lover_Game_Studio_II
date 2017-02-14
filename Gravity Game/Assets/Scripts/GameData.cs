@@ -10,6 +10,9 @@ public class GameData : MonoBehaviour {
     public static bool greenDoorisActivate = false;
     public static bool redDoorisActivate = false;
 
+    public static bool isPlayer1ReadytoShift = false;
+    public static bool isPlayer2ReadytoShift = false;
+
     public static bool isWin = false;
 
     // Use this for initialization

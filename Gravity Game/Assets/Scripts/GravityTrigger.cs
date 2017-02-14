@@ -12,7 +12,7 @@ public class GravityTrigger : MonoBehaviour {
 
     public Light glow;
 
-    public static bool canShift = false;
+    public static bool inShiftRange = false;
 
     private string _tag;
     public Rigidbody2D rb;
@@ -37,12 +37,12 @@ public class GravityTrigger : MonoBehaviour {
         if (distance <= range)
         {
             glow.enabled = true;
-            canShift = true;
+            inShiftRange = true;
         }
         else
         {
             glow.enabled = false;
-            canShift = false;
+            inShiftRange = false;
         }
 
     }

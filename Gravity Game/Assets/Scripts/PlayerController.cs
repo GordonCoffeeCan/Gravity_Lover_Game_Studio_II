@@ -11,7 +11,8 @@ public class PlayerController : MonoBehaviour {
 
     private Rigidbody2D _rig;
     private string _tag;
-    private int _gravityScale = 0;
+
+    private ParticleSystem _playerEffect;
 
     private string _gravityShiftKey;
 
@@ -22,18 +23,19 @@ public class PlayerController : MonoBehaviour {
     private void Awake() {
         _rig = this.GetComponent<Rigidbody2D>();
         _tag = this.gameObject.tag;
+        _playerEffect = transform.FindChild("PlayerEffect").GetComponent<ParticleSystem>();
     }
 
     // Use this for initialization
     void Start () {
         //Detect which player is and set control scheme
         if (_tag == "Player1") {
-            _gravityScale = 1;
+            _rig.gravityScale = 1;
             _directionPad = "Horizontal";
             _jumpPad = "Jump";
             _gravityShiftKey = "ShiftButton";
         } else if (_tag == "Player2") {
-            _gravityScale = -1;
+            _rig.gravityScale = -1;
             _directionPad = "GamePad_H";
             _jumpPad = "GamePad_Jump";
             _gravityShiftKey = "GamePad_Shift";
@@ -44,15 +46,31 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButtonUp(_gravityShiftKey)) {
-            if (GravityTrigger.canShift == true) {
-                _gravityScale *= -1;
-                _rig.gravityScale *= -1;
+
+        if (GravityTrigger.inShiftRange == true) {
+            if (Input.GetButton(_gravityShiftKey)) {
+                _playerEffect.gameObject.SetActive(true);
+                if(_tag == "Player1") {
+                    GameData.isPlayer1ReadytoShift = true;
+                }else if(_tag == "Player2") {
+                    GameData.isPlayer2ReadytoShift = true;
+                }
+            }else if (Input.GetButtonUp(_gravityShiftKey)) {
+                if(GameData.isPlayer1ReadytoShift == true && GameData.isPlayer2ReadytoShift == true) {
+                    GameObject.Find("Player1").GetComponent<Rigidbody2D>().gravityScale *= -1;
+                    GameObject.Find("Player2").GetComponent<Rigidbody2D>().gravityScale *= -1;
+                }
+            }else {
+                NotReadyToShiftGravity();
             }
+
+            
+        } else {
+            NotReadyToShiftGravity();
         }
 
         if (Input.GetButtonDown(_jumpPad) && isGournd == true) {
-            _rig.AddForce(new Vector2(_rig.velocity.x, jump * _gravityScale), ForceMode2D.Impulse);
+            _rig.AddForce(new Vector2(_rig.velocity.x, jump * _rig.gravityScale), ForceMode2D.Impulse);
         }
     }
 
@@ -81,5 +99,11 @@ public class PlayerController : MonoBehaviour {
         if (_col.gameObject.tag == "Ground") {
             isGournd = false;
         }
+    }
+
+    private void NotReadyToShiftGravity() {
+        GameData.isPlayer1ReadytoShift = false;
+        GameData.isPlayer2ReadytoShift = false;
+        _playerEffect.gameObject.SetActive(false);
     }
 }
