@@ -51,31 +51,32 @@ public class PlayerHoveringController : MonoBehaviour {
             if (Input.GetButton(_gravityShiftKey)) {
                 _playerEffect.gameObject.SetActive(true);
 
-
-                if(_tag == "Player1") {
-                    GameData.isPlayer2ReadytoHover = true;
-                } else if (_tag == "Player2") {
+                if (_tag == "Player1") {
                     GameData.isPlayer1ReadytoHover = true;
+                }else if (_tag == "Player2") {
+                    GameData.isPlayer2ReadytoHover = true;
                 }
 
-                if(GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true) {
+
+                if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true) {
                     _rig.gravityScale = 0;
                     _rig.velocity = (GravityTrigger.middlePoint - this.transform.position) * 2;
-
                 }
-
-            }else if (Input.GetButtonUp(_gravityShiftKey)) {
+            } else if (Input.GetButtonUp(_gravityShiftKey)) {
+                if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true) {
+                    GameData.player1GravityScale *= -1;
+                    GameData.player2GravityScale *= -1;
+                }
+                
                 if (_tag == "Player1") {
-                    GameData.player1CurrentGravityScale *= -1;
-                    _rig.gravityScale = GameData.player1CurrentGravityScale;
+                    _rig.gravityScale = GameData.player1GravityScale;
+                    GameObject.Find("Player2").GetComponent<Rigidbody2D>().gravityScale = GameData.player2GravityScale;
                 } else if (_tag == "Player2") {
-                    _rig.gravityScale = GameData.player1CurrentGravityScale * -1;
+                    _rig.gravityScale = GameData.player2GravityScale;
+                    GameObject.Find("Player1").GetComponent<Rigidbody2D>().gravityScale = GameData.player1GravityScale;
                 }
-            }else {
                 NotReadyToShiftGravity();
             }
-
-            
         } else {
             NotReadyToShiftGravity();
         }
@@ -83,6 +84,8 @@ public class PlayerHoveringController : MonoBehaviour {
         if (Input.GetButtonDown(_jumpPad) && isGournd == true) {
             _rig.AddForce(new Vector2(_rig.velocity.x, jump * _rig.gravityScale), ForceMode2D.Impulse);
         }
+
+        Debug.Log("Player1 is ready = " + GameData.isPlayer1ReadytoHover + "; " + "Player2 is ready = " + GameData.isPlayer2ReadytoHover);
     }
 
     private void FixedUpdate() {
@@ -117,9 +120,11 @@ public class PlayerHoveringController : MonoBehaviour {
         GameData.isPlayer2ReadytoHover = false;
 
         if (_tag == "Player1") {
-            _rig.gravityScale = GameData.player1CurrentGravityScale;
-        }else if (_tag == "Player2") {
-            _rig.gravityScale = GameData.player1CurrentGravityScale * -1;
+            _rig.gravityScale = GameData.player1GravityScale;
+            GameObject.Find("Player2").GetComponent<Rigidbody2D>().gravityScale = GameData.player2GravityScale;
+        } else if (_tag == "Player2") {
+            _rig.gravityScale = GameData.player2GravityScale;
+            GameObject.Find("Player1").GetComponent<Rigidbody2D>().gravityScale = GameData.player1GravityScale;
         }
 
         _playerEffect.gameObject.SetActive(false);

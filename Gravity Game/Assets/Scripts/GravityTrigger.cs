@@ -4,24 +4,30 @@ using UnityEngine;
 
 public class GravityTrigger : MonoBehaviour {
 
-    public Transform self;
-    public Transform other;
+    public Transform marker;
+
+    private Transform player1;
+    private Transform player2;
     private float distance;
 
     public float range; //how close the objects need to be to each other to gravity shift;
     public float minRange; //how close the players will stop moving toward from each other;
 
-    public Light glow;
+    private Light glow1;
+    private Light glow2;
 
     public static bool inShiftRange = false;
 
     public static Vector3 middlePoint;
 
     private string _tag;
-    public Rigidbody2D rb;
 
     private void Awake() {
-        
+        player1 = GameObject.Find("Player1").transform;
+        player2 = GameObject.Find("Player2").transform;
+
+        glow1 = player1.FindChild("Point light").GetComponent<Light>();
+        glow2 = player2.FindChild("Point light").GetComponent<Light>();
     }
 
     // Use this for initialization
@@ -31,8 +37,12 @@ public class GravityTrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        distance = Vector3.Distance(self.position, other.position);
-        middlePoint = (self.position - other.position) / 2;
+        distance = Vector3.Distance(player1.position, player2.position);
+        middlePoint = (player1.position + player2.position) / 2;
+
+        if(marker != null) {
+            marker.position = middlePoint;
+        }
         inRange();
 	}
 
@@ -40,12 +50,14 @@ public class GravityTrigger : MonoBehaviour {
     {
         if (distance <= range)
         {
-            glow.enabled = true;
+            glow1.enabled = true;
+            glow2.enabled = true;
             inShiftRange = true;
         }
         else
         {
-            glow.enabled = false;
+            glow1.enabled = false;
+            glow2.enabled = false;
             inShiftRange = false;
         }
 
