@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class GravityTrigger : MonoBehaviour {
 
-    public Transform marker;
+    public Rigidbody2D minRanage;
+    public float minDistance = 1;
+    public float range = 10; //how close the objects need to be to each other to gravity shift;
 
     private Transform player1;
     private Transform player2;
     private float distance;
-
-    public float range; //how close the objects need to be to each other to gravity shift;
-    public float minRange; //how close the players will stop moving toward from each other;
-
+    private float noDistance = 0;
+    private CircleCollider2D minRanageCollider;
     private Light glow1;
     private Light glow2;
 
@@ -28,6 +28,8 @@ public class GravityTrigger : MonoBehaviour {
 
         glow1 = player1.FindChild("Point light").GetComponent<Light>();
         glow2 = player2.FindChild("Point light").GetComponent<Light>();
+
+        minRanageCollider = minRanage.gameObject.GetComponent<CircleCollider2D>();
     }
 
     // Use this for initialization
@@ -37,14 +39,23 @@ public class GravityTrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        
         distance = Vector3.Distance(player1.position, player2.position);
         middlePoint = (player1.position + player2.position) / 2;
-
-        if(marker != null) {
-            marker.position = middlePoint;
-        }
         inRange();
+
+        if(GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true) {
+            minRanageCollider.radius = Mathf.MoveTowards(minRanageCollider.radius, minDistance, 5 * Time.deltaTime);
+        } else {
+            minRanageCollider.radius = Mathf.MoveTowards(minRanageCollider.radius, noDistance, 5 * Time.deltaTime);
+        }
 	}
+
+    private void FixedUpdate() {
+        if (minRanage != null) {
+            minRanage.velocity = (middlePoint - minRanage.transform.position) * 10;
+        }
+    }
 
     void inRange()
     {
