@@ -16,7 +16,7 @@ public class FinalGateTrigger : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(isPlayer1in == true && isPlayer2in == true) {
-            SceneManager.LoadScene(1, LoadSceneMode.Single);
+            SceneManager.LoadScene("PrototypeWin", LoadSceneMode.Single);
         }
 	}
 
