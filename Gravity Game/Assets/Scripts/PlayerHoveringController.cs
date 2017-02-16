@@ -84,8 +84,6 @@ public class PlayerHoveringController : MonoBehaviour {
         if (Input.GetButtonDown(_jumpPad) && isGournd == true) {
             _rig.AddForce(new Vector2(_rig.velocity.x, jump * _rig.gravityScale), ForceMode2D.Impulse);
         }
-
-        Debug.Log("Player1 is ready = " + GameData.isPlayer1ReadytoHover + "; " + "Player2 is ready = " + GameData.isPlayer2ReadytoHover);
     }
 
     private void FixedUpdate() {
