@@ -6,6 +6,7 @@ public class newButtonScriptPlayer2 : MonoBehaviour {
 
 	public GameObject door1;
 	public GameObject door2;
+	private GameObject selfButton;
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +16,7 @@ public class newButtonScriptPlayer2 : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
+		selfButton = gameObject;
 
 	}
 
@@ -26,6 +27,7 @@ public class newButtonScriptPlayer2 : MonoBehaviour {
 			Destroy (door1);
 			Destroy (door2);
 
+			Destroy (selfButton);
 
 
 
