@@ -33,12 +33,14 @@ public class PlayerHoveringController : MonoBehaviour {
             _rig.gravityScale = 1;
             _directionPad = "Horizontal";
             _jumpPad = "Jump";
+			Physics2D.IgnoreCollision (this.GetComponent<Collider2D>(),GameObject.Find("Player2").GetComponent<Collider2D>());
             _gravityShiftKey = "ShiftButton";
         } else if (_tag == "Player2") {
             _rig.gravityScale = -1;
             _directionPad = "GamePad_H";
             _jumpPad = "GamePad_Jump";
             _gravityShiftKey = "GamePad_Shift";
+			Physics2D.IgnoreCollision (this.GetComponent<Collider2D>(),GameObject.Find("Player1").GetComponent<Collider2D>());
         }
 
         inAirSpeed = speed * 0.8f;
