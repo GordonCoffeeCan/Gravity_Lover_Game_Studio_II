@@ -13,4 +13,10 @@ public class DangerSphereBehavior : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void OnCollisionEnter(Collision _col) {
+        if(_col.gameObject.tag == "Player1" || _col.gameObject.tag == "Player2") {
+            Destroy(_col.gameObject);
+        }
+    }
 }
