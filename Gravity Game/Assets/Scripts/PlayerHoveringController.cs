@@ -6,6 +6,7 @@ public class PlayerHoveringController : MonoBehaviour {
     public float speed = 10;
     public float inAirSpeed;
     public float jump = 5;
+    public int gravityScale = 1;
 
     public static int jumpDirection;
 
@@ -30,13 +31,15 @@ public class PlayerHoveringController : MonoBehaviour {
     void Start () {
         //Detect which player is and set control scheme
         if (_tag == "Player1") {
-            _rig.gravityScale = 1;
+            _rig.gravityScale = gravityScale;
+            GameData.player1GravityScale = gravityScale;
             _directionPad = "Horizontal";
             _jumpPad = "Jump";
 			Physics2D.IgnoreCollision (this.GetComponent<Collider2D>(),GameObject.Find("Player2").GetComponent<Collider2D>());
             _gravityShiftKey = "ShiftButton";
         } else if (_tag == "Player2") {
-            _rig.gravityScale = -1;
+            _rig.gravityScale = gravityScale;
+            GameData.player2GravityScale = gravityScale;
             _directionPad = "GamePad_H";
             _jumpPad = "GamePad_Jump";
             _gravityShiftKey = "GamePad_Shift";

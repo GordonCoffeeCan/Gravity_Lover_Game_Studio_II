@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour {
     public float speed = 10;
     public float inAirSpeed;
     public float jump = 5;
+    public int graivityScale = 1;
 
     public static int jumpDirection;
 
@@ -29,13 +30,12 @@ public class PlayerController : MonoBehaviour {
     // Use this for initialization
     void Start () {
         //Detect which player is and set control scheme
+        _rig.gravityScale = graivityScale;
         if (_tag == "Player1") {
-            _rig.gravityScale = 1;
             _directionPad = "Horizontal";
             _jumpPad = "Jump";
             _gravityShiftKey = "ShiftButton";
         } else if (_tag == "Player2") {
-            _rig.gravityScale = -1;
             _directionPad = "GamePad_H";
             _jumpPad = "GamePad_Jump";
             _gravityShiftKey = "GamePad_Shift";
