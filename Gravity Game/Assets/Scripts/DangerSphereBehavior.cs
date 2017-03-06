@@ -14,8 +14,8 @@ public class DangerSphereBehavior : MonoBehaviour {
 		
 	}
 
-    private void OnCollisionEnter(Collision _col) {
-        if(_col.gameObject.tag == "Player1" || _col.gameObject.tag == "Player2") {
+    private void OnCollisionEnter2D(Collision2D _col) {
+        if (_col.gameObject.tag == "Player1" || _col.gameObject.tag == "Player2") {
             Destroy(_col.gameObject);
         }
     }
