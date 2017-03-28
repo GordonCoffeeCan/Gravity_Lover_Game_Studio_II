@@ -10,6 +10,8 @@ public class PlayerHoveringController : MonoBehaviour {
 
     public static int jumpDirection;
 
+    private float _timeCanFly = 0;
+    private float _flyTimer = 5;
     private Rigidbody2D _rig;
     private string _tag;
 
@@ -47,26 +49,55 @@ public class PlayerHoveringController : MonoBehaviour {
         }
 
         inAirSpeed = speed * 0.8f;
+        _timeCanFly = _flyTimer;
     }
 	
 	// Update is called once per frame
 	void Update () {
-
         if (GravityTrigger.inShiftRange == true) {
             if (Input.GetButton(_gravityShiftKey)) {
-                _playerEffect.gameObject.SetActive(true);
+                FlyingTimer();
+                if(_timeCanFly > 0)
+                {
+                    _playerEffect.gameObject.SetActive(true);
 
-                if (_tag == "Player1") {
-                    GameData.isPlayer1ReadytoHover = true;
-                }else if (_tag == "Player2") {
-                    GameData.isPlayer2ReadytoHover = true;
+                    if (_tag == "Player1")
+                    {
+                        GameData.isPlayer1ReadytoHover = true;
+                    }
+                    else if (_tag == "Player2")
+                    {
+                        GameData.isPlayer2ReadytoHover = true;
+                    }
+
+
+                    if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true)
+                    {
+                        _rig.gravityScale = 0;
+                        _rig.velocity = (GravityTrigger.middlePoint - this.transform.position) * 2;
+                    }
                 }
+                else
+                {
+                    if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true)
+                    {
+                        GameData.player1GravityScale *= -1;
+                        GameData.player2GravityScale *= -1;
+                    }
 
-
-                if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true) {
-                    _rig.gravityScale = 0;
-                    _rig.velocity = (GravityTrigger.middlePoint - this.transform.position) * 2;
+                    if (_tag == "Player1")
+                    {
+                        _rig.gravityScale = GameData.player1GravityScale;
+                        GameObject.Find("Player2").GetComponent<Rigidbody2D>().gravityScale = GameData.player2GravityScale;
+                    }
+                    else if (_tag == "Player2")
+                    {
+                        _rig.gravityScale = GameData.player2GravityScale;
+                        GameObject.Find("Player1").GetComponent<Rigidbody2D>().gravityScale = GameData.player1GravityScale;
+                    }
+                    NotReadyToShiftGravity();
                 }
+                
             } else if (Input.GetButtonUp(_gravityShiftKey)) {
                 if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true) {
                     GameData.player1GravityScale *= -1;
@@ -89,11 +120,14 @@ public class PlayerHoveringController : MonoBehaviour {
         if (Input.GetButtonDown(_jumpPad) && isGournd == true) {
             _rig.AddForce(new Vector2(_rig.velocity.x, jump * _rig.gravityScale), ForceMode2D.Impulse);
         }
+
+        Debug.Log(_timeCanFly);
     }
 
     private void FixedUpdate() {
         if(isGournd == true) {
             _rig.velocity = new Vector2(Input.GetAxis(_directionPad) * speed, _rig.velocity.y);
+            _timeCanFly = _flyTimer;
         } else {
             _rig.velocity = new Vector2(Input.GetAxis(_directionPad) * inAirSpeed, _rig.velocity.y);
         }
@@ -131,5 +165,15 @@ public class PlayerHoveringController : MonoBehaviour {
         }
 
         _playerEffect.gameObject.SetActive(false);
+    }
+
+    private void FlyingTimer()
+    {
+        _timeCanFly -= Time.deltaTime;
+
+        if(_timeCanFly <= 0)
+        {
+            _timeCanFly = 0;
+        }
     }
 }
