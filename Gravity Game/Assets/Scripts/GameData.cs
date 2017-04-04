@@ -19,13 +19,16 @@ public class GameData : MonoBehaviour {
     public static float player1GravityScale = 1;
     public static float player2GravityScale = -1;
 
+    public static bool isKey1Collected = true;
+    public static bool isKey2Collected = true;
+
 
     public static bool isWin = false;
 
     // Use this for initialization
     void Start () {
-		
-	}
+
+    }
 	
 	// Update is called once per frame
 	void Update () {

@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GravityTrigger : MonoBehaviour {
 
     public float range = 10; //how close the objects need to be to each other to gravity shift;
+    public float separateRange = 60; //How far the players that will separate them to fail the game;
 
     private Transform player1;
     private Transform player2;
@@ -38,6 +40,7 @@ public class GravityTrigger : MonoBehaviour {
         distance = Vector3.Distance(player1.position, player2.position);
         middlePoint = (player1.position + player2.position) / 2;
         inRange();
+        OutRange();
 	}
 
     void inRange()
@@ -55,5 +58,11 @@ public class GravityTrigger : MonoBehaviour {
             inShiftRange = false;
         }
 
+    }
+
+    void OutRange() {
+        if(distance >= separateRange) {
+            SceneManager.LoadScene(2, LoadSceneMode.Single);
+        }
     }
 }
