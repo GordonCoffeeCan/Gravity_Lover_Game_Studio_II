@@ -14,7 +14,7 @@ public class startScreenScript : MonoBehaviour {
 
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
-			SceneManager.LoadScene ("Gravity_Level2");	
+			SceneManager.LoadScene ("tutorialScene");	
 		}
 
 	}

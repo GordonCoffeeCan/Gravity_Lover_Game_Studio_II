@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraControl : MonoBehaviour {
 
-    public Transform player1;
-    public Transform player2;
+    private Transform player1;
+    private Transform player2;
     public float minSize = 7;
 
     private Camera _camera;
