@@ -121,7 +121,7 @@ public class PlayerHoveringController : MonoBehaviour {
             _rig.AddForce(new Vector2(_rig.velocity.x, jump * _rig.gravityScale), ForceMode2D.Impulse);
         }
 
-        Debug.Log(_timeCanFly);
+
     }
 
     private void FixedUpdate() {
