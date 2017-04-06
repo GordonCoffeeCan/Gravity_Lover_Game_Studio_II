@@ -31,8 +31,8 @@ public class CheckPointCollision : MonoBehaviour {
             PlayerLoaderData ad = new PlayerLoaderData(pos1);
             PlayerLoaderData ad2 = new PlayerLoaderData(pos2);
 
-            ad.Save("Player1Position.txt");
-            ad2.Save("Player2Position.txt");
+            ad.Save(player1SaveString);
+            ad2.Save(player2SaveString);
 
         } 
     }

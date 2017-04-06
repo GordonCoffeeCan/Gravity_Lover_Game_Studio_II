@@ -6,12 +6,15 @@ using SimpleJSON;
 public class PlayerLoaderData{
 
     public Vector3 position;
+    public int gravityScale;
 
  
 
     private const string POS_X = "xpos";
     private const string POS_Y = "ypos";
     private const string POS_Z = "zpos";
+
+    private const string GRAV_SCALE = "gravScal";
 
     public PlayerLoaderData(string fileName)
     {
@@ -21,8 +24,6 @@ public class PlayerLoaderData{
             jason[POS_X].AsFloat,
             jason[POS_Y].AsFloat,
             jason[POS_Z].AsFloat);
-
- 
     }
 
     public PlayerLoaderData(Vector3 position)
