@@ -7,6 +7,8 @@ public class PlayerLoaderData{
 
     public Vector3 position;
 
+ 
+
     private const string POS_X = "xpos";
     private const string POS_Y = "ypos";
     private const string POS_Z = "zpos";
