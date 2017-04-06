@@ -7,6 +7,8 @@ public class CheckPointLoader : MonoBehaviour {
     public GameObject _player1Prefab;
     public GameObject _player2Prefab;
 
+
+
     public Vector3 player1Pos;
     public Vector3 player2Pos;
     // Use this for initialization
