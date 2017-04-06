@@ -7,12 +7,22 @@ public class SceneTransitionScript : MonoBehaviour {
 
 	public bool player1Trigger = false;
 	public bool player2Trigger = false;
-	public string sceneManager;
 
-	void Update (){
+    private bool isSceneLoaded = false;
+
+	public string sceneToLoad;
+
+    private void Awake() {
+        isSceneLoaded = false;
+    }
+
+    void Update (){
 		if (player1Trigger == true && player2Trigger == true) {
-			SceneManager.LoadScene (sceneManager);
-			Debug.Log ("test");
+            if(isSceneLoaded == false) {
+                SceneManager.LoadScene(sceneToLoad);
+                isSceneLoaded = true;
+                Debug.Log("Scene: " + sceneToLoad + " is loaded!");
+            }
 		}
 	}
 
@@ -40,7 +50,5 @@ public class SceneTransitionScript : MonoBehaviour {
 			player2Trigger = false;
 		}
 	}
-
-
 		
-	}
+}
