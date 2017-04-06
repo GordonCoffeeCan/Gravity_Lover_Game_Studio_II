@@ -37,7 +37,7 @@ public class PlayerHoveringController : MonoBehaviour {
             GameData.player1GravityScale = gravityScale;
             _directionPad = "Horizontal";
             _jumpPad = "Jump";
-			Physics2D.IgnoreCollision (this.GetComponent<Collider2D>(),GameObject.Find("Player2").GetComponent<Collider2D>());
+			Physics2D.IgnoreCollision (this.GetComponent<Collider2D>(),GameObject.FindWithTag("Player2").GetComponent<Collider2D>());
             _gravityShiftKey = "ShiftButton";
         } else if (_tag == "Player2") {
             _rig.gravityScale = gravityScale;
@@ -45,7 +45,7 @@ public class PlayerHoveringController : MonoBehaviour {
             _directionPad = "GamePad_H";
             _jumpPad = "GamePad_Jump";
             _gravityShiftKey = "GamePad_Shift";
-			Physics2D.IgnoreCollision (this.GetComponent<Collider2D>(),GameObject.Find("Player1").GetComponent<Collider2D>());
+			Physics2D.IgnoreCollision (this.GetComponent<Collider2D>(),GameObject.FindWithTag("Player1").GetComponent<Collider2D>());
         }
 
         inAirSpeed = speed * 0.8f;
@@ -106,10 +106,10 @@ public class PlayerHoveringController : MonoBehaviour {
                 
                 if (_tag == "Player1") {
                     _rig.gravityScale = GameData.player1GravityScale;
-                    GameObject.Find("Player2").GetComponent<Rigidbody2D>().gravityScale = GameData.player2GravityScale;
+                    GameObject.FindWithTag("Player2").GetComponent<Rigidbody2D>().gravityScale = GameData.player2GravityScale;
                 } else if (_tag == "Player2") {
                     _rig.gravityScale = GameData.player2GravityScale;
-                    GameObject.Find("Player1").GetComponent<Rigidbody2D>().gravityScale = GameData.player1GravityScale;
+                    GameObject.FindWithTag("Player1").GetComponent<Rigidbody2D>().gravityScale = GameData.player1GravityScale;
                 }
                 NotReadyToShiftGravity();
             }
@@ -158,10 +158,10 @@ public class PlayerHoveringController : MonoBehaviour {
 
         if (_tag == "Player1") {
             _rig.gravityScale = GameData.player1GravityScale;
-            GameObject.Find("Player2").GetComponent<Rigidbody2D>().gravityScale = GameData.player2GravityScale;
+            GameObject.FindWithTag("Player2").GetComponent<Rigidbody2D>().gravityScale = GameData.player2GravityScale;
         } else if (_tag == "Player2") {
             _rig.gravityScale = GameData.player2GravityScale;
-            GameObject.Find("Player1").GetComponent<Rigidbody2D>().gravityScale = GameData.player1GravityScale;
+            GameObject.FindWithTag("Player1").GetComponent<Rigidbody2D>().gravityScale = GameData.player1GravityScale;
         }
 
         _playerEffect.gameObject.SetActive(false);

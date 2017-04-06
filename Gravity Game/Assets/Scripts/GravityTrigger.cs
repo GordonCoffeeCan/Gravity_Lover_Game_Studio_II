@@ -20,9 +20,9 @@ public class GravityTrigger : MonoBehaviour {
 
     private string _tag;
 
-    private void Awake() {
-        player1 = GameObject.Find("Player1").transform;
-        player2 = GameObject.Find("Player2").transform;
+    private void Start() {
+        player1 = GameObject.FindWithTag("Player1").transform;
+        player2 = GameObject.FindWithTag("Player2").transform;
 
         glow1 = player1.FindChild("Point light").GetComponent<Light>();
         glow2 = player2.FindChild("Point light").GetComponent<Light>();
@@ -30,9 +30,7 @@ public class GravityTrigger : MonoBehaviour {
     }
 
     // Use this for initialization
-    void Start () {
-        
-    }
+    
 	
 	// Update is called once per frame
 	void Update () {
