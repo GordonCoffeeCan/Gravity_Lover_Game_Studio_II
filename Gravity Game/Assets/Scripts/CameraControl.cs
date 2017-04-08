@@ -18,7 +18,7 @@ public class CameraControl : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-        Debug.Log(_camera.aspect);
+        
 	}
 	
 	// Update is called once per frame
