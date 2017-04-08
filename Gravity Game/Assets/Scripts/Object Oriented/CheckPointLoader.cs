@@ -20,8 +20,8 @@ public class CheckPointLoader : MonoBehaviour {
         PlayerLoaderData loadAD = new PlayerLoaderData(Player1PosString);
         PlayerLoaderData loadAD2 = new PlayerLoaderData(Player2PosString);
 
-        print(loadAD.position);
-        print(loadAD2.position);
+        //print(loadAD.position);
+        //print(loadAD2.position);
 
         player1Pos = loadAD.position;
         player2Pos = loadAD2.position;

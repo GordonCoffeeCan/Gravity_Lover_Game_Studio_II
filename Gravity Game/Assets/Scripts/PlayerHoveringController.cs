@@ -27,26 +27,29 @@ public class PlayerHoveringController : MonoBehaviour {
         _rig = this.GetComponent<Rigidbody2D>();
         _tag = this.gameObject.tag;
         _playerEffect = transform.FindChild("PlayerEffect").GetComponent<ParticleSystem>();
+
+        CheckControllerStatus();
     }
 
     // Use this for initialization
     void Start () {
         //Detect which player is and set control scheme
         if (_tag == "Player1") {
-            _rig.gravityScale = gravityScale;
-            GameData.player1GravityScale = gravityScale;
             _directionPad = "Horizontal";
             _jumpPad = "Jump";
-			Physics2D.IgnoreCollision (this.GetComponent<Collider2D>(),GameObject.FindWithTag("Player2").GetComponent<Collider2D>());
             _gravityShiftKey = "ShiftButton";
-        } else if (_tag == "Player2") {
             _rig.gravityScale = gravityScale;
-            GameData.player2GravityScale = gravityScale;
+            GameData.player1GravityScale = gravityScale;
+            Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), GameObject.FindWithTag("Player2").GetComponent<Collider2D>());
+        } else if (_tag == "Player2") {
             _directionPad = "GamePad_H";
             _jumpPad = "GamePad_Jump";
             _gravityShiftKey = "GamePad_Shift";
-			Physics2D.IgnoreCollision (this.GetComponent<Collider2D>(),GameObject.FindWithTag("Player1").GetComponent<Collider2D>());
+            _rig.gravityScale = gravityScale;
+            GameData.player2GravityScale = gravityScale;
+            Physics2D.IgnoreCollision(this.GetComponent<Collider2D>(), GameObject.FindWithTag("Player1").GetComponent<Collider2D>());
         }
+
 
         inAirSpeed = speed * 0.8f;
         _timeCanFly = _flyTimer;
@@ -54,6 +57,8 @@ public class PlayerHoveringController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //CheckControllerStatus();
+
         if (GravityTrigger.inShiftRange == true) {
             if (Input.GetButton(_gravityShiftKey)) {
                 FlyingTimer();
@@ -130,6 +135,14 @@ public class PlayerHoveringController : MonoBehaviour {
             _timeCanFly = _flyTimer;
         } else {
             _rig.velocity = new Vector2(Input.GetAxis(_directionPad) * inAirSpeed, _rig.velocity.y);
+        }
+    }
+
+    private void CheckControllerStatus() {
+        if (Input.GetJoystickNames()[0] != "" && Input.GetJoystickNames()[1] != "") {
+            GameData.isConnectedControllers = true;
+        } else {
+            GameData.isConnectedControllers = false;
         }
     }
 

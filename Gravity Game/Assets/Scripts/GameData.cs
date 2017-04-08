@@ -22,6 +22,8 @@ public class GameData : MonoBehaviour {
     public static bool isKey1Collected = true;
     public static bool isKey2Collected = true;
 
+    public static bool isConnectedControllers = false;
+
 
     public static bool isWin = false;
 
