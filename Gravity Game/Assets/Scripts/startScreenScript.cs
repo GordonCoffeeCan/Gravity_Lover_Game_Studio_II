@@ -4,6 +4,8 @@ using UnityEngine.SceneManagement;
 
 public class startScreenScript : MonoBehaviour {
 
+    public string sceneToLoad;
+
 	// Use this for initialization
 	void Start () {
 
@@ -14,7 +16,7 @@ public class startScreenScript : MonoBehaviour {
 
 		if (Input.GetKeyDown(KeyCode.Space))
 		{
-			SceneManager.LoadScene ("tutorialScene");	
+			SceneManager.LoadScene (sceneToLoad);	
 		}
 
 	}
