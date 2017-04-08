@@ -27,8 +27,6 @@ public class PlayerHoveringController : MonoBehaviour {
         _rig = this.GetComponent<Rigidbody2D>();
         _tag = this.gameObject.tag;
         _playerEffect = transform.FindChild("PlayerEffect").GetComponent<ParticleSystem>();
-
-        CheckControllerStatus();
     }
 
     // Use this for initialization
@@ -135,14 +133,6 @@ public class PlayerHoveringController : MonoBehaviour {
             _timeCanFly = _flyTimer;
         } else {
             _rig.velocity = new Vector2(Input.GetAxis(_directionPad) * inAirSpeed, _rig.velocity.y);
-        }
-    }
-
-    private void CheckControllerStatus() {
-        if (Input.GetJoystickNames()[0] != "" && Input.GetJoystickNames()[1] != "") {
-            GameData.isConnectedControllers = true;
-        } else {
-            GameData.isConnectedControllers = false;
         }
     }
 
