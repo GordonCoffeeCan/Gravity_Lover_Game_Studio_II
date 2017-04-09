@@ -18,6 +18,8 @@ public class PlayerHoveringController : MonoBehaviour {
     private ParticleSystem _playerEffect;
     private Animator _playerRing; //Ring Animation to indicate switch
 
+    private AudioSource _playerAudio;
+
     private string _gravityShiftKey;
 
     private string _directionPad;
@@ -28,7 +30,8 @@ public class PlayerHoveringController : MonoBehaviour {
         _rig = this.GetComponent<Rigidbody2D>();
         _tag = this.gameObject.tag;
         _playerEffect = transform.FindChild("PlayerEffect").GetComponent<ParticleSystem>();
-        _playerRing = gameObject.GetComponent<Animator>();
+        _playerRing = gameObject.GetComponent<Animator>(); //gets animator
+        _playerAudio = gameObject.GetComponent<AudioSource>();
     }
 
     // Use this for initialization
@@ -66,7 +69,11 @@ public class PlayerHoveringController : MonoBehaviour {
                 {
                     _playerEffect.gameObject.SetActive(true);
                     _playerRing.SetBool("wantsToSwitch", true); //initializes the ring animation
-                    _playerRing.speed = 3.0f;
+                    _playerRing.speed = 3.0f;//speeds up the animation
+                    if (!_playerAudio.isPlaying)
+                    {
+                        _playerAudio.Play();
+                    }
                    
 
                     if (_tag == "Player1")
@@ -174,6 +181,10 @@ public class PlayerHoveringController : MonoBehaviour {
 
         _playerEffect.gameObject.SetActive(false);
         _playerRing.SetBool("wantsToSwitch", false);
+
+        _playerAudio.Stop();
+
+
 
     }
 
