@@ -19,6 +19,8 @@ public class PlayerHoveringController : MonoBehaviour {
     private Animator _playerRing; //Ring Animation to indicate switch
 
     private AudioSource _playerAudio;
+    private float _playerAudioStartVolume;
+    public bool _fadeAudio;
 
     private string _gravityShiftKey;
 
@@ -26,12 +28,17 @@ public class PlayerHoveringController : MonoBehaviour {
     private string _jumpPad;
     private bool isGournd = false;
 
+   
+
     private void Awake() {
         _rig = this.GetComponent<Rigidbody2D>();
         _tag = this.gameObject.tag;
         _playerEffect = transform.FindChild("PlayerEffect").GetComponent<ParticleSystem>();
         _playerRing = gameObject.GetComponent<Animator>(); //gets animator
+
         _playerAudio = gameObject.GetComponent<AudioSource>();
+        _playerAudioStartVolume = 1;
+        _fadeAudio = false;
     }
 
     // Use this for initialization
@@ -61,6 +68,7 @@ public class PlayerHoveringController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         //CheckControllerStatus();
+        
 
         if (GravityTrigger.inShiftRange == true) {
             if (Input.GetButton(_gravityShiftKey)) {
@@ -70,6 +78,9 @@ public class PlayerHoveringController : MonoBehaviour {
                     _playerEffect.gameObject.SetActive(true);
                     _playerRing.SetBool("wantsToSwitch", true); //initializes the ring animation
                     _playerRing.speed = 3.0f;//speeds up the animation
+
+                    _playerAudio.volume = _playerAudioStartVolume;
+
                     if (!_playerAudio.isPlaying)
                     {
                         _playerAudio.Play();
@@ -94,6 +105,7 @@ public class PlayerHoveringController : MonoBehaviour {
                 }
                 else
                 {
+                    _fadeAudio = true;
                     if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true)
                     {
                         GameData.player1GravityScale *= -1;
@@ -117,6 +129,8 @@ public class PlayerHoveringController : MonoBehaviour {
                 if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true) {
                     GameData.player1GravityScale *= -1;
                     GameData.player2GravityScale *= -1;
+
+                    
                 }
                 
                 if (_tag == "Player1") {
@@ -136,6 +150,8 @@ public class PlayerHoveringController : MonoBehaviour {
             _rig.AddForce(new Vector2(_rig.velocity.x, jump * _rig.gravityScale), ForceMode2D.Impulse);
         }
 
+   
+   
 
     }
 
@@ -181,9 +197,8 @@ public class PlayerHoveringController : MonoBehaviour {
 
         _playerEffect.gameObject.SetActive(false);
         _playerRing.SetBool("wantsToSwitch", false);
-
         _playerAudio.Stop();
-
+        
 
 
     }
