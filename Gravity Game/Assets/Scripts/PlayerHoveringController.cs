@@ -16,6 +16,7 @@ public class PlayerHoveringController : MonoBehaviour {
     private string _tag;
 
     private ParticleSystem _playerEffect;
+    private Animator _playerRing; //Ring Animation to indicate switch
 
     private string _gravityShiftKey;
 
@@ -27,6 +28,7 @@ public class PlayerHoveringController : MonoBehaviour {
         _rig = this.GetComponent<Rigidbody2D>();
         _tag = this.gameObject.tag;
         _playerEffect = transform.FindChild("PlayerEffect").GetComponent<ParticleSystem>();
+        _playerRing = gameObject.GetComponent<Animator>();
     }
 
     // Use this for initialization
@@ -63,6 +65,9 @@ public class PlayerHoveringController : MonoBehaviour {
                 if(_timeCanFly > 0)
                 {
                     _playerEffect.gameObject.SetActive(true);
+                    _playerRing.SetBool("wantsToSwitch", true); //initializes the ring animation
+                    _playerRing.speed = 3.0f;
+                   
 
                     if (_tag == "Player1")
                     {
@@ -168,6 +173,8 @@ public class PlayerHoveringController : MonoBehaviour {
         }
 
         _playerEffect.gameObject.SetActive(false);
+        _playerRing.SetBool("wantsToSwitch", false);
+
     }
 
     private void FlyingTimer()

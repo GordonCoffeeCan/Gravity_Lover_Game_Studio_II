@@ -14,6 +14,8 @@ public class PlayerController : MonoBehaviour {
     private string _tag;
 
     private ParticleSystem _playerEffect;
+    private Animator _playerRing;
+    
 
     private string _gravityShiftKey;
 
@@ -25,6 +27,8 @@ public class PlayerController : MonoBehaviour {
         _rig = this.GetComponent<Rigidbody2D>();
         _tag = this.gameObject.tag;
         _playerEffect = transform.FindChild("PlayerEffect").GetComponent<ParticleSystem>();
+        _playerRing = gameObject.GetComponent<Animator>();
+         
     }
 
     // Use this for initialization
@@ -49,8 +53,9 @@ public class PlayerController : MonoBehaviour {
 
         if (GravityTrigger.inShiftRange == true) {
             if (Input.GetButton(_gravityShiftKey)) {
-                _playerEffect.gameObject.SetActive(true);
-                if(_tag == "Player1") {
+                
+               _playerEffect.gameObject.SetActive(true);
+                if (_tag == "Player1") {
                     GameData.isPlayer1ReadytoShift = true;
                 }else if(_tag == "Player2") {
                     GameData.isPlayer2ReadytoShift = true;
