@@ -10,7 +10,7 @@ public class PlayerHoveringController : MonoBehaviour {
 
     public static int jumpDirection;
 
-    private float _timeCanFly = 0;
+    public float _timeCanFly = 0;
     private float _flyTimer = 5;
     private Rigidbody2D _rig;
     private string _tag;
@@ -28,7 +28,14 @@ public class PlayerHoveringController : MonoBehaviour {
     private string _jumpPad;
     private bool isGournd = false;
 
-   
+    ///For the bar graph
+    public float barDisplay; //current progress
+    public Vector2 pos = new Vector2(60, 10);
+    public Vector2 size = new Vector2(100, 10);
+    public Texture2D emptyTex;
+    public Texture2D fullTex;
+
+
 
     private void Awake() {
         _rig = this.GetComponent<Rigidbody2D>();
@@ -64,9 +71,24 @@ public class PlayerHoveringController : MonoBehaviour {
         inAirSpeed = speed * 0.8f;
         _timeCanFly = _flyTimer;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+
+    void OnGUI()
+    {
+        //draw the background:
+        GUI.BeginGroup(new Rect(pos.x, pos.y, size.x, size.y));
+        GUI.Box(new Rect(0, 0, size.x, size.y), emptyTex);
+
+        //draw the filled-in part:
+        GUI.BeginGroup(new Rect(0, 0, size.x * barDisplay, size.y));
+        GUI.Box(new Rect(0, 0, size.x, size.y), fullTex);
+        GUI.EndGroup();
+        GUI.EndGroup();
+    }
+
+
+    // Update is called once per frame
+    void Update () {
         //CheckControllerStatus();
         
 
@@ -105,11 +127,13 @@ public class PlayerHoveringController : MonoBehaviour {
                 }
                 else
                 {
-                    _fadeAudio = true;
+                   
                     if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true)
                     {
                         GameData.player1GravityScale *= -1;
                         GameData.player2GravityScale *= -1;
+
+                      
                     }
 
                     if (_tag == "Player1")
@@ -150,8 +174,8 @@ public class PlayerHoveringController : MonoBehaviour {
             _rig.AddForce(new Vector2(_rig.velocity.x, jump * _rig.gravityScale), ForceMode2D.Impulse);
         }
 
-   
-   
+
+        barDisplay = _timeCanFly * 0.2f; //shrinking glide bar
 
     }
 
