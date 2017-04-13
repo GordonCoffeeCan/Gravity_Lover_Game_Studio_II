@@ -29,5 +29,7 @@ public class Progress : MonoBehaviour
         //eg, the loading progress, the player's health, or whatever.
         barDisplay = Time.time * 0.05f;
         //        barDisplay = MyControlScript.staticHealth;
+
+        
     }
 }
