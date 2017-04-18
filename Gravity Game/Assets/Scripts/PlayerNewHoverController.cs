@@ -8,6 +8,7 @@ public class PlayerNewHoverController : MonoBehaviour
     public float inAirSpeed;
     public float jump = 5;
     public int gravityScale = 1;
+    public int gravitySpeed;
 
     public static int jumpDirection;
 
@@ -56,6 +57,7 @@ public class PlayerNewHoverController : MonoBehaviour
         //Detect which player is and set control scheme
         if (_tag == "Player1")
         {
+            gravityScale = -1;
             _directionPad = "Horizontal";
             _jumpPad = "Jump";
             _gravityShiftKey = "ShiftButton";
@@ -65,6 +67,7 @@ public class PlayerNewHoverController : MonoBehaviour
         }
         else if (_tag == "Player2")
         {
+            gravityScale = 1;
             _directionPad = "GamePad_H";
             _jumpPad = "GamePad_Jump";
             _gravityShiftKey = "GamePad_Shift";
@@ -103,9 +106,7 @@ public class PlayerNewHoverController : MonoBehaviour
         {
             if (Input.GetButton(_gravityShiftKey))
             {
-                FlyingTimer();
-                if (_timeCanFly > 0)
-                {
+                
                     _playerEffect.gameObject.SetActive(true);
                     _playerRing.SetBool("wantsToSwitch", true); //initializes the ring animation
                     _playerRing.speed = 3.0f;//speeds up the animation
@@ -128,19 +129,14 @@ public class PlayerNewHoverController : MonoBehaviour
                     }
 
 
-                    if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true)
-                    {
-                        _rig.gravityScale = 0;
-                        _rig.velocity = (GravityTrigger.middlePoint - this.transform.position) * 2;
-                    }
-                }
-                else
-                {
+                   
+               
+               
 
                     if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true)
                     {
-                        GameData.player1GravityScale *= -1;
-                        GameData.player2GravityScale *= -1;
+                        GameData.player1GravityScale = -1*gravitySpeed;
+                        GameData.player2GravityScale = 1* gravitySpeed;
 
 
                     }
@@ -156,18 +152,17 @@ public class PlayerNewHoverController : MonoBehaviour
                         GameObject.Find("Player1").GetComponent<Rigidbody2D>().gravityScale = GameData.player1GravityScale;
                     }
                     NotReadyToShiftGravity();
-                }
+                
 
             }
             else if (Input.GetButtonUp(_gravityShiftKey))
             {
-                if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true)
-                {
-                    GameData.player1GravityScale *= -1;
-                    GameData.player2GravityScale *= -1;
+                
+                    GameData.player1GravityScale  = 1*gravitySpeed;
+                    GameData.player2GravityScale  = -1* gravitySpeed;
 
 
-                }
+             
 
                 if (_tag == "Player1")
                 {
@@ -193,7 +188,7 @@ public class PlayerNewHoverController : MonoBehaviour
         }
 
 
-        barDisplay = _timeCanFly * 0.2f; //shrinking glide bar
+        
 
     }
 
