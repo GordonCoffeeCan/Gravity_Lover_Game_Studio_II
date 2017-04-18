@@ -37,7 +37,7 @@ public class PlayerNewHoverController : MonoBehaviour
     public Texture2D emptyTex;
     public Texture2D fullTex;
 
-
+    public float maxVelocity = 1;
 
     private void Awake()
     {
@@ -54,6 +54,8 @@ public class PlayerNewHoverController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+
+       
         //Detect which player is and set control scheme
         if (_tag == "Player1")
         {
@@ -100,6 +102,11 @@ public class PlayerNewHoverController : MonoBehaviour
     void Update()
     {
         //CheckControllerStatus();
+
+        if (_rig.velocity.magnitude > maxVelocity)
+        {
+            _rig.velocity = _rig.velocity.normalized * maxVelocity;
+        }
 
 
         if (GravityTrigger.inShiftRange == true)
@@ -158,12 +165,20 @@ public class PlayerNewHoverController : MonoBehaviour
             }
             else if (Input.GetButtonUp(_gravityShiftKey))
             {
-                
-                    GameData.player1GravityScale  = 1*gravitySpeed;
-                    GameData.player2GravityScale  = -1* gravitySpeed;
 
 
-             
+
+            
+                    GameData.player1GravityScale = 1 * gravitySpeed;
+                    GameData.player2GravityScale = -1 * gravitySpeed;
+
+
+
+               
+
+
+
+
 
                 if (_tag == "Player1")
                 {
