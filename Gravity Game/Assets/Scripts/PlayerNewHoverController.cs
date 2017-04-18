@@ -253,7 +253,7 @@ public class PlayerNewHoverController : MonoBehaviour
 
         _playerEffect.gameObject.SetActive(false);
         _playerRing.SetBool("wantsToSwitch", false);
-
+        _playerAudio.Stop();
 
 
     }
