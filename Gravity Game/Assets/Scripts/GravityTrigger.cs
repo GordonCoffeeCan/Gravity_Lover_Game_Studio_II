@@ -11,12 +11,15 @@ public class GravityTrigger : MonoBehaviour {
     private Transform player1;
     private Transform player2;
     private float distance;
+
     private Light glow1;
     private Light glow2;
 
     public static bool inShiftRange = false;
 
     public static Vector3 middlePoint;
+    public static Vector3 player1Pos;
+    public static Vector3 player2Pos;
 
     private string _tag;
 
@@ -37,6 +40,10 @@ public class GravityTrigger : MonoBehaviour {
         
         distance = Vector3.Distance(player1.position, player2.position);
         middlePoint = (player1.position + player2.position) / 2;
+
+        player1Pos = player1.position;
+        player2Pos = player2.position;
+
         inRange();
         OutRange();
 	}

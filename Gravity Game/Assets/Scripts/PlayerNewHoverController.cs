@@ -126,14 +126,15 @@ public class PlayerNewHoverController : MonoBehaviour
                     else if (_tag == "Player2")
                     {
                         GameData.isPlayer2ReadytoHover = true;
+                        
                     }
 
 
-                   
-               
                
 
-                    if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true)
+
+
+                if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true)
                     {
                         GameData.player1GravityScale = -1*gravitySpeed;
                         GameData.player2GravityScale = 1* gravitySpeed;
