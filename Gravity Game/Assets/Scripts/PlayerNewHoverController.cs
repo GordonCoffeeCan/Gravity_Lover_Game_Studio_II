@@ -138,11 +138,6 @@ public class PlayerNewHoverController : MonoBehaviour
                         
                     }
 
-
-               
-
-
-
                 if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true)
                     {
                         GameData.player1GravityScale = -1*gravitySpeed;
@@ -168,9 +163,14 @@ public class PlayerNewHoverController : MonoBehaviour
             else if (Input.GetButtonUp(_gravityShiftKey))
             {
 
-               
+
+                if (GameData.isPlayer1ReadytoHover == true && GameData.isPlayer2ReadytoHover == true)
+                {
+                    GameData.player1GravityScale *= -1;
+                    GameData.player2GravityScale *= -1;
 
 
+                }
 
 
 
@@ -178,7 +178,7 @@ public class PlayerNewHoverController : MonoBehaviour
                 {
                     _rig.gravityScale = GameData.player1GravityScale;
                     GameObject.FindWithTag("Player2").GetComponent<Rigidbody2D>().gravityScale = GameData.player2GravityScale;
-                    GameData.isPlayer1ReadytoHover = false;
+                    //GameData.isPlayer1ReadytoHover = false;
 
 
                 }
@@ -186,17 +186,15 @@ public class PlayerNewHoverController : MonoBehaviour
                 {
                     _rig.gravityScale = GameData.player2GravityScale;
                     GameObject.FindWithTag("Player1").GetComponent<Rigidbody2D>().gravityScale = GameData.player1GravityScale;
-                    GameData.isPlayer2ReadytoHover = false;
+                    //GameData.isPlayer2ReadytoHover = false;
                 }
                 NotReadyToShiftGravity();
 
-                if (GameData.isPlayer1ReadytoHover == false && GameData.isPlayer2ReadytoHover == false)
-                {
-                    GameData.player1GravityScale = -1 * gravitySpeed;
-                    GameData.player2GravityScale = 1 * gravitySpeed;
+                
+                    
 
 
-                }
+                
             }
         }
         else
