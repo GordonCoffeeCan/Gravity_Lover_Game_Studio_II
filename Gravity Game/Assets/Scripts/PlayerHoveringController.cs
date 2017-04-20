@@ -8,7 +8,7 @@ public class PlayerHoveringController : MonoBehaviour {
     public float jump = 5;
     public int gravityScale = 1;
 
-    public float maxVelocity = 10;
+   
 
     public static int jumpDirection;
 
@@ -92,11 +92,7 @@ public class PlayerHoveringController : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         //CheckControllerStatus();
-        if (_rig.velocity.magnitude > maxVelocity)
-        {
-            _rig.velocity = _rig.velocity.normalized * maxVelocity;
-        }
-
+     
 
         if (GravityTrigger.inShiftRange == true) {
             if (Input.GetButton(_gravityShiftKey)) {
