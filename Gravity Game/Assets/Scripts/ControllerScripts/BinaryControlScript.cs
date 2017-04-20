@@ -32,6 +32,8 @@ public class BinaryControlScript : MonoBehaviour {
 
     private bool flipped = false;
 
+    public float speedBoost = 5;
+
     ///For the bar graph
     /*public float barDisplay; //current progress
     public Vector2 pos = new Vector2(60, 10);
@@ -134,7 +136,8 @@ public class BinaryControlScript : MonoBehaviour {
 
                 if (!flipped)
                 {
-                    _rig.velocity = -_rig.velocity;
+                    //_rig.velocity = -_rig.velocity;
+                    _rig.velocity = Vector2.down * speedBoost;
                     flipped = true;
                 }
 
@@ -146,7 +149,8 @@ public class BinaryControlScript : MonoBehaviour {
 
                 if (!flipped)
                 {
-                    _rig.velocity = -_rig.velocity;
+                    //_rig.velocity = -_rig.velocity;
+                    _rig.velocity = Vector2.up * speedBoost;
                     flipped = true;
                 }
             }
@@ -162,7 +166,9 @@ public class BinaryControlScript : MonoBehaviour {
 
                 if (flipped)
                 {
-                    _rig.velocity = -_rig.velocity;
+                    // _rig.velocity = -_rig.velocity;
+                    _rig.velocity = Vector2.up * speedBoost;
+
                     flipped = false;
                 }
             }
@@ -173,7 +179,8 @@ public class BinaryControlScript : MonoBehaviour {
 
                 if (flipped)
                 {
-                    _rig.velocity = -_rig.velocity;
+                   // _rig.velocity = -_rig.velocity;
+                    _rig.velocity = Vector2.down * speedBoost;
                     flipped = false;
                 }
             }
