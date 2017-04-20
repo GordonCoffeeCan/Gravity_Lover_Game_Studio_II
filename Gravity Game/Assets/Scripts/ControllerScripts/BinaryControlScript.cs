@@ -30,6 +30,8 @@ public class BinaryControlScript : MonoBehaviour {
     private string _jumpPad;
     private bool isGournd = false;
 
+    private bool flipped = false;
+
     ///For the bar graph
     /*public float barDisplay; //current progress
     public Vector2 pos = new Vector2(60, 10);
@@ -129,11 +131,24 @@ public class BinaryControlScript : MonoBehaviour {
             {
                 gravityScale = 1;
                 _rig.gravityScale = gravityScale;
+
+                if (!flipped)
+                {
+                    _rig.velocity = -_rig.velocity;
+                    flipped = true;
+                }
+
             }
             if (_tag == "Player2")
             {
                 gravityScale = -1;
                 _rig.gravityScale = gravityScale;
+
+                if (!flipped)
+                {
+                    _rig.velocity = -_rig.velocity;
+                    flipped = true;
+                }
             }
 
         }
@@ -144,11 +159,23 @@ public class BinaryControlScript : MonoBehaviour {
             {
                 gravityScale = -1;
                 _rig.gravityScale = gravityScale;
+
+                if (flipped)
+                {
+                    _rig.velocity = -_rig.velocity;
+                    flipped = false;
+                }
             }
             if (_tag == "Player2")
             {
                 gravityScale = 1;
                 _rig.gravityScale = gravityScale;
+
+                if (flipped)
+                {
+                    _rig.velocity = -_rig.velocity;
+                    flipped = false;
+                }
             }
         }
 
