@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ResetLevel : MonoBehaviour {
 
@@ -13,11 +14,14 @@ public class ResetLevel : MonoBehaviour {
     public GameObject player1SpawnPoint;
     public GameObject player2SpawnPoint;
 
+    private string currentScene;
+
 
     // Use this for initialization
     void Start () {
-		
-	}
+
+        currentScene = SceneManager.GetActiveScene().name;
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -34,6 +38,9 @@ public class ResetLevel : MonoBehaviour {
 
             ad.Save(player1SaveString);
             ad2.Save(player2SaveString);
+
+            SceneManager.LoadScene(currentScene);
+
         }
             
     }

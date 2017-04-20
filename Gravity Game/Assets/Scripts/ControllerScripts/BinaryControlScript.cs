@@ -95,7 +95,13 @@ public class BinaryControlScript : MonoBehaviour {
                 _playerRing.SetBool("wantsToSwitch", true); //initializes the ring animation
                 _playerRing.speed = 3.0f;//speeds up the animation
 
-                _playerAudio.volume = _playerAudioStartVolume;
+                _playerAudio.volume = 1;
+
+                if (!_playerAudio.isPlaying)
+                {
+                    _playerAudio.Play();
+                    Debug.Log("Audio is playing");
+                }
 
                 if (_tag == "Player1")
                 {
