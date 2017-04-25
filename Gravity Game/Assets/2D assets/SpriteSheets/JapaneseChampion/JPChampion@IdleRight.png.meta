@@ -1,0 +1,622 @@
+fileFormatVersion: 2
+guid: ede5c1a7c0be99049afe89fc4176768e
+timeCreated: 1493160599
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JPChampion@IdleRight_0
+    21300002: JPChampion@IdleRight_1
+    21300004: JPChampion@IdleRight_2
+    21300006: JPChampion@IdleRight_3
+    21300008: JPChampion@IdleRight_4
+    21300010: JPChampion@IdleRight_5
+    21300012: JPChampion@IdleRight_6
+    21300014: JPChampion@IdleRight_7
+    21300016: JPChampion@IdleRight_8
+    21300018: JPChampion@IdleRight_9
+    21300020: JPChampion@IdleRight_10
+    21300022: JPChampion@IdleRight_11
+    21300024: JPChampion@IdleRight_12
+    21300026: JPChampion@IdleRight_13
+    21300028: JPChampion@IdleRight_14
+    21300030: JPChampion@IdleRight_15
+    21300032: JPChampion@IdleRight_16
+    21300034: JPChampion@IdleRight_17
+    21300036: JPChampion@IdleRight_18
+    21300038: JPChampion@IdleRight_19
+    21300040: JPChampion@IdleRight_20
+    21300042: JPChampion@IdleRight_21
+    21300044: JPChampion@IdleRight_22
+    21300046: JPChampion@IdleRight_23
+    21300048: JPChampion@IdleRight_24
+    21300050: JPChampion@IdleRight_25
+    21300052: JPChampion@IdleRight_26
+    21300054: JPChampion@IdleRight_27
+    21300056: JPChampion@IdleRight_28
+    21300058: JPChampion@IdleRight_29
+    21300060: JPChampion@IdleRight_30
+    21300062: JPChampion@IdleRight_31
+    21300064: JPChampion@IdleRight_32
+    21300066: JPChampion@IdleRight_33
+    21300068: JPChampion@IdleRight_34
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: tvOS
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 815
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 815
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 815
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 815
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_4
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 815
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_5
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 815
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_6
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 815
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_7
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 815
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_8
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 815
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_9
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 815
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_10
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 815
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_11
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 815
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_12
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 815
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_13
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 815
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 606
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_15
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 606
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_16
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 606
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_17
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 606
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_18
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 606
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_19
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 606
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_20
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 606
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_21
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 606
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_22
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 606
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_23
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 606
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_24
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 606
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_25
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 606
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_26
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 606
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_27
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 606
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 397
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_29
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 397
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_30
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 397
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_31
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 397
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_32
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 397
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_33
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 397
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@IdleRight_34
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 397
+        width: 73
+        height: 209
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

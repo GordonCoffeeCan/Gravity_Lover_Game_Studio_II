@@ -1,0 +1,622 @@
+fileFormatVersion: 2
+guid: ad64944960ba4be45899710b6656c7e9
+timeCreated: 1493151458
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PRChampion@IdleLeft_0
+    21300002: PRChampion@IdleLeft_1
+    21300004: PRChampion@IdleLeft_2
+    21300006: PRChampion@IdleLeft_3
+    21300008: PRChampion@IdleLeft_4
+    21300010: PRChampion@IdleLeft_5
+    21300012: PRChampion@IdleLeft_6
+    21300014: PRChampion@IdleLeft_7
+    21300016: PRChampion@IdleLeft_8
+    21300018: PRChampion@IdleLeft_9
+    21300020: PRChampion@IdleLeft_10
+    21300022: PRChampion@IdleLeft_11
+    21300024: PRChampion@IdleLeft_12
+    21300026: PRChampion@IdleLeft_13
+    21300028: PRChampion@IdleLeft_14
+    21300030: PRChampion@IdleLeft_15
+    21300032: PRChampion@IdleLeft_16
+    21300034: PRChampion@IdleLeft_17
+    21300036: PRChampion@IdleLeft_18
+    21300038: PRChampion@IdleLeft_19
+    21300040: PRChampion@IdleLeft_20
+    21300042: PRChampion@IdleLeft_21
+    21300044: PRChampion@IdleLeft_22
+    21300046: PRChampion@IdleLeft_23
+    21300048: PRChampion@IdleLeft_24
+    21300050: PRChampion@IdleLeft_25
+    21300052: PRChampion@IdleLeft_26
+    21300054: PRChampion@IdleLeft_27
+    21300056: PRChampion@IdleLeft_28
+    21300058: PRChampion@IdleLeft_29
+    21300060: PRChampion@IdleLeft_30
+    21300062: PRChampion@IdleLeft_31
+    21300064: PRChampion@IdleLeft_32
+    21300066: PRChampion@IdleLeft_33
+    21300068: PRChampion@IdleLeft_34
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: tvOS
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 823
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 823
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 823
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_3
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 823
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 823
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_5
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 823
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_6
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 823
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_7
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 823
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_8
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 823
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 622
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_10
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 622
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_11
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 622
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_12
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 622
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_13
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 622
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_14
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 622
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_15
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 622
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_16
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 622
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_17
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 622
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 421
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_19
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 421
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_20
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 421
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_21
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 421
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_22
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 421
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_23
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 421
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_24
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 421
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_25
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 421
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_26
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 421
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 220
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_28
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 220
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_29
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 220
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_30
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 220
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_31
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 220
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_32
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 220
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_33
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 220
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@IdleLeft_34
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 220
+        width: 112
+        height: 201
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
