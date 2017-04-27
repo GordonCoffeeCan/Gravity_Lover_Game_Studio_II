@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
@@ -6,6 +6,7 @@ using UnityEngine;
 public class SceneTransitionScript : MonoBehaviour {
 
 	public bool player1Trigger = false;
+
 	public bool player2Trigger = false;
 
     private bool isSceneLoaded = false;
