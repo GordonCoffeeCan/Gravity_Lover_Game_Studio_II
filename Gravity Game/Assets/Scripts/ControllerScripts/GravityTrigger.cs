@@ -21,9 +21,14 @@ public class GravityTrigger : MonoBehaviour {
     public static Vector3 player1Pos;
     public static Vector3 player2Pos;
 
+    private string currentScene;
+
     private string _tag;
 
     private void Start() {
+
+        currentScene = SceneManager.GetActiveScene().name;
+
         player1 = GameObject.FindWithTag("Player1").transform;
         player2 = GameObject.FindWithTag("Player2").transform;
 
@@ -67,7 +72,7 @@ public class GravityTrigger : MonoBehaviour {
 
     void OutRange() {
         if(distance >= separateRange) {
-            SceneManager.LoadScene(2, LoadSceneMode.Single);
+            SceneManager.LoadScene(currentScene); 
         }
     }
 }
