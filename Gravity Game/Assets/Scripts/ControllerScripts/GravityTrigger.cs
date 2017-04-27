@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GravityTrigger : MonoBehaviour {
@@ -15,6 +16,8 @@ public class GravityTrigger : MonoBehaviour {
     private Light glow1;
     private Light glow2;
 
+    private float distancePercentage;
+
     public static bool inShiftRange = false;
 
     public static Vector3 middlePoint;
@@ -24,6 +27,29 @@ public class GravityTrigger : MonoBehaviour {
     private string currentScene;
 
     private string _tag;
+
+    //camerShake
+
+    public Vector3 originalCameraPosition;
+
+    float shakeAmt = 0;
+
+    public Camera mainCamera;
+
+    public Rigidbody2D rb;
+    
+   
+
+    private float minimumRange=5;
+
+    //CameraShakeEnd
+
+
+    //RedOverLay
+
+    public Image panel; 
+
+
 
     private void Start() {
 
@@ -51,6 +77,12 @@ public class GravityTrigger : MonoBehaviour {
 
         inRange();
         OutRange();
+
+        distancePercentage = distance*0.00002f*255;
+
+        panel.color = new Color(255, 0, 0, distancePercentage);
+
+        
 	}
 
     void inRange()
@@ -60,12 +92,29 @@ public class GravityTrigger : MonoBehaviour {
             glow1.enabled = true;
             glow2.enabled = true;
             inShiftRange = true;
+
+            
+            
         }
         else
         {
             glow1.enabled = false;
             glow2.enabled = false;
             inShiftRange = false;
+
+            
+        }
+
+        if (distance <= minimumRange)
+        {
+            
+            shakeAmt = 0;
+            //StopShaking();
+        }
+        else
+        {
+            shakeAmt = distance * 1000;
+            CameraShake();
         }
 
     }
@@ -74,5 +123,24 @@ public class GravityTrigger : MonoBehaviour {
         if(distance >= separateRange) {
             SceneManager.LoadScene(currentScene); 
         }
+    }
+
+    void CameraShake()
+    {
+        if (shakeAmt > 0)
+        {
+            float quakeAmt = Random.value * shakeAmt * 2 - shakeAmt;
+            Vector3 pp = mainCamera.transform.position;
+            pp.x += quakeAmt; // can also add to x and/or z
+            mainCamera.transform.position = pp;
+
+            Debug.Log("CameraShake");
+        }
+    }
+
+    void StopShaking()
+    {
+        CancelInvoke("CameraShake");
+        mainCamera.transform.position = originalCameraPosition;
     }
 }
