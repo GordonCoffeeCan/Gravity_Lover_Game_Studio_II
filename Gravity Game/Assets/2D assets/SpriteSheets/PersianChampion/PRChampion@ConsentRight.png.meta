@@ -1,0 +1,538 @@
+fileFormatVersion: 2
+guid: bc7efef1b84fdf34fbe0cd72d93604c7
+timeCreated: 1493409847
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: PRChampion@ConsentRight_0
+    21300002: PRChampion@ConsentRight_1
+    21300004: PRChampion@ConsentRight_2
+    21300006: PRChampion@ConsentRight_3
+    21300008: PRChampion@ConsentRight_4
+    21300010: PRChampion@ConsentRight_5
+    21300012: PRChampion@ConsentRight_6
+    21300014: PRChampion@ConsentRight_7
+    21300016: PRChampion@ConsentRight_8
+    21300018: PRChampion@ConsentRight_9
+    21300020: PRChampion@ConsentRight_10
+    21300022: PRChampion@ConsentRight_11
+    21300024: PRChampion@ConsentRight_12
+    21300026: PRChampion@ConsentRight_13
+    21300028: PRChampion@ConsentRight_14
+    21300030: PRChampion@ConsentRight_15
+    21300032: PRChampion@ConsentRight_16
+    21300034: PRChampion@ConsentRight_17
+    21300036: PRChampion@ConsentRight_18
+    21300038: PRChampion@ConsentRight_19
+    21300040: PRChampion@ConsentRight_20
+    21300042: PRChampion@ConsentRight_21
+    21300044: PRChampion@ConsentRight_22
+    21300046: PRChampion@ConsentRight_23
+    21300048: PRChampion@ConsentRight_24
+    21300050: PRChampion@ConsentRight_25
+    21300052: PRChampion@ConsentRight_26
+    21300054: PRChampion@ConsentRight_27
+    21300056: PRChampion@ConsentRight_28
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: tvOS
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1776
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_1
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1776
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_2
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1776
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1776
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_4
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1776
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_5
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1776
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_6
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1776
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1504
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_8
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1504
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_9
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1504
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_10
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1504
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_11
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1504
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_12
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1504
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_13
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1504
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1232
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_15
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 1232
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_16
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 1232
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_17
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1232
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_18
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 1232
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_19
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 1232
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_20
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 1232
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_22
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 960
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_23
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 960
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_24
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 960
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_25
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 960
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_26
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 960
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_27
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 960
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: PRChampion@ConsentRight_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 688
+        width: 136
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
