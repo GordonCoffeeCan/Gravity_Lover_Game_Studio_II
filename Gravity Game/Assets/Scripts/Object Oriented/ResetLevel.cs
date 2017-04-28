@@ -42,6 +42,26 @@ public class ResetLevel : MonoBehaviour {
             SceneManager.LoadScene(currentScene);
 
         }
+
+
             
+    }
+
+    public void Reset()
+    {
+        Debug.Log("Scene Reset");
+
+        pos1 = player1SpawnPoint.transform.position;
+        pos2 = player2SpawnPoint.transform.position;
+
+        PlayerLoaderData ad = new PlayerLoaderData(pos1);
+        PlayerLoaderData ad2 = new PlayerLoaderData(pos2);
+
+        ad.Save(player1SaveString);
+        ad2.Save(player2SaveString);
+        Time.timeScale = 1f;
+
+        SceneManager.LoadScene("startScene");
+
     }
 }
