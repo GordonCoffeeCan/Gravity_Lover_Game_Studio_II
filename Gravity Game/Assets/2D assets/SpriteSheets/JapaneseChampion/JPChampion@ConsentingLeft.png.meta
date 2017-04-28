@@ -1,0 +1,538 @@
+fileFormatVersion: 2
+guid: 6339cac0e5f19934dbe49b177f989215
+timeCreated: 1493409007
+licenseType: Pro
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: JPChampion@ConsentingLeft_0
+    21300002: JPChampion@ConsentingLeft_1
+    21300004: JPChampion@ConsentingLeft_2
+    21300006: JPChampion@ConsentingLeft_3
+    21300008: JPChampion@ConsentingLeft_4
+    21300010: JPChampion@ConsentingLeft_5
+    21300012: JPChampion@ConsentingLeft_6
+    21300014: JPChampion@ConsentingLeft_7
+    21300016: JPChampion@ConsentingLeft_8
+    21300018: JPChampion@ConsentingLeft_9
+    21300020: JPChampion@ConsentingLeft_10
+    21300022: JPChampion@ConsentingLeft_11
+    21300024: JPChampion@ConsentingLeft_12
+    21300026: JPChampion@ConsentingLeft_13
+    21300028: JPChampion@ConsentingLeft_14
+    21300030: JPChampion@ConsentingLeft_15
+    21300032: JPChampion@ConsentingLeft_16
+    21300034: JPChampion@ConsentingLeft_17
+    21300036: JPChampion@ConsentingLeft_18
+    21300038: JPChampion@ConsentingLeft_19
+    21300040: JPChampion@ConsentingLeft_20
+    21300042: JPChampion@ConsentingLeft_21
+    21300044: JPChampion@ConsentingLeft_22
+    21300046: JPChampion@ConsentingLeft_23
+    21300048: JPChampion@ConsentingLeft_24
+    21300050: JPChampion@ConsentingLeft_25
+    21300052: JPChampion@ConsentingLeft_26
+    21300054: JPChampion@ConsentingLeft_27
+    21300056: JPChampion@ConsentingLeft_28
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: tvOS
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Tizen
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: WebGL
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Samsung TV
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1777
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_1
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1777
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_2
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 1777
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_3
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1777
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_4
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1777
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_5
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1777
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_6
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1777
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_7
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1777
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1506
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_9
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1506
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_10
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 1506
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_11
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1506
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_12
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1506
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_13
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1506
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_14
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1506
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_15
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1506
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1235
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_17
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1235
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_18
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 1235
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_19
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 1235
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_20
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1235
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_21
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 1235
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_22
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 1235
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_23
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 1235
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 964
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_25
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 964
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_26
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 964
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_27
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 964
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: JPChampion@ConsentingLeft_28
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 964
+        width: 119
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
