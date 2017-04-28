@@ -7,6 +7,10 @@ public class DeathScript : MonoBehaviour {
 
     private string currentScene;
 
+    public float deathDelay = 1.0f;
+    private GameObject player1;
+    private GameObject player2;
+
 	// Use this for initialization
 	void Start () {
         currentScene = SceneManager.GetActiveScene().name;
@@ -22,10 +26,22 @@ public class DeathScript : MonoBehaviour {
     {
        if(collider.gameObject.tag == "Player1" || collider.gameObject.tag == "Player2")
         {
-            SceneManager.LoadScene(currentScene);
+            Invoke("Restart", deathDelay);
+
+            player1 = GameObject.FindWithTag("Player1").gameObject;
+            player2 = GameObject.FindWithTag("Player2").gameObject;
+
+            player1.SetActive(false);
+            player2.SetActive(false);
+
+
         }
             
 
+    }
+
+    void Restart() {
+        SceneManager.LoadScene(currentScene);
     }
 
 }

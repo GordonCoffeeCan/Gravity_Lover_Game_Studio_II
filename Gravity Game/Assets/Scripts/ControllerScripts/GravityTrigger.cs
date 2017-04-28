@@ -69,16 +69,16 @@ public class GravityTrigger : MonoBehaviour {
         OutRange();
 
         //distancePercentage = distance*0.00002f*255;
-        if (distance > 2/5 * separateRange)
+        if (distance > (0.4 * separateRange))
         {
-            distancePercentage = ((distance / separateRange) * 25) * Time.deltaTime;
+            distancePercentage = ((distance / separateRange) * 50) * Time.deltaTime;
         }
         else
         {
             distancePercentage = 0;
         }
 
-        panel.color = new Color(255, 0, 0, distancePercentage);
+        panel.color = new Color(255, 255, 255, distancePercentage);
 
         
 	}
