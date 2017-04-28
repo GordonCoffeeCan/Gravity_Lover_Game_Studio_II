@@ -113,5 +113,8 @@ public class GravityTrigger : MonoBehaviour {
         }
     }
 
-   
+    void Restart()
+    {
+        SceneManager.LoadScene(currentScene);
+    }
 }

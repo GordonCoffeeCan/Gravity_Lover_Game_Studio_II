@@ -11,8 +11,10 @@ public class SceneTransitionScript : MonoBehaviour {
 
     private bool isSceneLoaded = false;
 
-	public string sceneToLoad;
+	private string sceneToLoad;
 
+    public Object sceneToLoad2;
+  
 
 
     //For Resetting scene
@@ -34,7 +36,13 @@ public class SceneTransitionScript : MonoBehaviour {
     void Update (){
 		if (player1Trigger == true && player2Trigger == true) {
             if(isSceneLoaded == false) {
+
+                sceneToLoad = sceneToLoad2.name;
+
                 SceneManager.LoadScene(sceneToLoad);
+
+                
+
                 isSceneLoaded = true;
                 Debug.Log("Scene: " + sceneToLoad + " is loaded!");
 
