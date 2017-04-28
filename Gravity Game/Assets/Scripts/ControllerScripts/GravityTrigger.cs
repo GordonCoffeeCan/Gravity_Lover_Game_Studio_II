@@ -30,17 +30,7 @@ public class GravityTrigger : MonoBehaviour {
 
     //camerShake
 
-    public Vector3 originalCameraPosition;
-
-    float shakeAmt = 0;
-
-    public Camera mainCamera;
-
-    public Rigidbody2D rb;
-    
    
-
-    private float minimumRange=5;
 
     //CameraShakeEnd
 
@@ -105,17 +95,7 @@ public class GravityTrigger : MonoBehaviour {
             
         }
 
-        if (distance <= minimumRange)
-        {
-            
-            shakeAmt = 0;
-            //StopShaking();
-        }
-        else
-        {
-            shakeAmt = distance * 1000;
-            CameraShake();
-        }
+      
 
     }
 
@@ -125,22 +105,5 @@ public class GravityTrigger : MonoBehaviour {
         }
     }
 
-    void CameraShake()
-    {
-        if (shakeAmt > 0)
-        {
-            float quakeAmt = Random.value * shakeAmt * 2 - shakeAmt;
-            Vector3 pp = mainCamera.transform.position;
-            pp.x += quakeAmt; // can also add to x and/or z
-            mainCamera.transform.position = pp;
-
-            Debug.Log("CameraShake");
-        }
-    }
-
-    void StopShaking()
-    {
-        CancelInvoke("CameraShake");
-        mainCamera.transform.position = originalCameraPosition;
-    }
+   
 }
