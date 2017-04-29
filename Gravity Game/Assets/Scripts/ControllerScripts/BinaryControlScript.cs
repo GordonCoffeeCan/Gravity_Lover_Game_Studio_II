@@ -100,7 +100,7 @@ public class BinaryControlScript : MonoBehaviour {
                 if (!_playerAudio.isPlaying)
                 {
                     _playerAudio.Play();
-                    Debug.Log("Audio is playing");
+                    //Debug.Log("Audio is playing");
                 }
 
                 if (_tag == "Player1")
@@ -111,7 +111,7 @@ public class BinaryControlScript : MonoBehaviour {
                 if (_tag == "Player2")
                 {
                     NewGameData.isPlayer2ReadytoShift = true;
-                    Debug.Log("Player 2 wants to switch");
+                    //Debug.Log("Player 2 wants to switch");
                 }
             }
             else
@@ -119,12 +119,12 @@ public class BinaryControlScript : MonoBehaviour {
                 if (_tag == "Player1")
                 {
                     NewGameData.isPlayer1ReadytoShift = false;
-                    Debug.Log("Player 1 does NOT want to switch");
+                    //Debug.Log("Player 1 does NOT want to switch");
                 }
                 if (_tag == "Player2")
                 {
                     NewGameData.isPlayer2ReadytoShift = false;
-                    Debug.Log("Player 2 does NOT want to switch");
+                    //Debug.Log("Player 2 does NOT want to switch");
                 }
 
                 _playerEffect.gameObject.SetActive(false);
