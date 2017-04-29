@@ -13,7 +13,7 @@ public class pause : MonoBehaviour {
     void Start()
     {
         quitButton.gameObject.SetActive(false);
-        Debug.Log("Pause");
+        //Debug.Log("Pause");
     }
 
     void Update()
