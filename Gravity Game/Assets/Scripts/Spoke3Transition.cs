@@ -16,6 +16,7 @@ public class Spoke3Transition : MonoBehaviour {
     public Object sceneToLoad2;
 
     public GameObject otherTrigger;
+    public bool isTriggered;
     
 
     //For Resetting scene
@@ -37,7 +38,7 @@ public class Spoke3Transition : MonoBehaviour {
 
     void Update()
     {
-        if (player1Trigger == true && player2Trigger == true)
+        if (isTriggered == true && otherTrigger.GetComponent<Spoke3Transition>().isTriggered == true)
         {
             if (isSceneLoaded == false)
             {
@@ -64,34 +65,30 @@ public class Spoke3Transition : MonoBehaviour {
 
             }
         }
+
+
+
+
+
+
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
 
-        if (other.gameObject.tag == "Player1")
+        if (other.gameObject.tag == "Player1" || other.gameObject.tag =="Player2")
         {
-            player1Trigger = true;
+            isTriggered = true;
 
-        }
-
-        if (other.gameObject.tag == "Player2")
-        {
-            player2Trigger = true;
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Player1")
+        if (other.gameObject.tag == "Player1" || other.gameObject.tag == "Player2")
         {
-            player1Trigger = false;
+            isTriggered = false;
 
-        }
-
-        if (other.gameObject.tag == "Player2")
-        {
-            player2Trigger = false;
         }
     }
 }
