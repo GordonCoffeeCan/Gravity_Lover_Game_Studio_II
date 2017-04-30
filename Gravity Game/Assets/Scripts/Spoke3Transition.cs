@@ -5,9 +5,9 @@ using UnityEngine;
 
 public class Spoke3Transition : MonoBehaviour {
 
-    public static bool player1Trigger = false;
+    public bool player1Trigger = false;
 
-    public static bool player2Trigger = false;
+    public bool player2Trigger = false;
 
     private bool isSceneLoaded = false;
 
@@ -15,8 +15,8 @@ public class Spoke3Transition : MonoBehaviour {
 
     public Object sceneToLoad2;
 
-    public Collider2D exit1;
-    public Collider2D exit2;
+    public GameObject otherTrigger;
+    
 
     //For Resetting scene
     private Vector3 pos1;
