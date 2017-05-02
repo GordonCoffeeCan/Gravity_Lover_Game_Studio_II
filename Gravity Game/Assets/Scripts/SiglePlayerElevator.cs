@@ -18,11 +18,12 @@ public class SiglePlayerElevator : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D _col) {
         if(_col.gameObject.tag == "Player2") {
-            Invoke("TriggerAnim", 1.2f);
+            TriggerAnim();
         }
     }
 
     private void TriggerAnim() {
         _anim.SetBool("GoUp", true);
+        _anim.SetBool("GoDown", false);
     }
 }
