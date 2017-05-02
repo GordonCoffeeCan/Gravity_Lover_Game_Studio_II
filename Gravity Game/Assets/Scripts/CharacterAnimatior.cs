@@ -34,7 +34,7 @@ public class CharacterAnimatior : MonoBehaviour {
             _anim.SetLayerWeight(1, 1);
         }
 
-        if(Mathf.Abs(_rig.velocity.y) > 0.15f) {
+        if(Mathf.Abs(_rig.velocity.y) > 0.1f) {
             _anim.SetBool("InTheAir", true);
         } else {
             _anim.SetBool("InTheAir", false);

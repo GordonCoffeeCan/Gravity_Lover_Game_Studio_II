@@ -78,7 +78,7 @@ public class GravityTrigger : MonoBehaviour {
             distancePercentage = 0;
         }
 
-        panel.color = new Color(255, 255, 255, distancePercentage);
+        panel.color = new Color(1, 1, 1, distancePercentage);
 
         
 	}
