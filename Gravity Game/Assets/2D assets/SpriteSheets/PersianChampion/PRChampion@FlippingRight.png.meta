@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 149a8b54e5a262a4cbacca9a03c86825
-timeCreated: 1493409307
+timeCreated: 1493929591
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -146,11 +146,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 808
-        width: 125
-        height: 216
+        y: 751
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -158,12 +158,12 @@ TextureImporter:
       name: PRChampion@FlippingRight_1
       rect:
         serializedVersion: 2
-        x: 125
-        y: 808
-        width: 125
-        height: 216
+        x: 190
+        y: 751
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -171,12 +171,12 @@ TextureImporter:
       name: PRChampion@FlippingRight_2
       rect:
         serializedVersion: 2
-        x: 250
-        y: 808
-        width: 125
-        height: 216
+        x: 380
+        y: 751
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -184,12 +184,12 @@ TextureImporter:
       name: PRChampion@FlippingRight_3
       rect:
         serializedVersion: 2
-        x: 375
-        y: 808
-        width: 125
-        height: 216
+        x: 570
+        y: 751
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -197,12 +197,12 @@ TextureImporter:
       name: PRChampion@FlippingRight_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 592
-        width: 125
-        height: 216
+        x: 760
+        y: 751
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -210,12 +210,12 @@ TextureImporter:
       name: PRChampion@FlippingRight_5
       rect:
         serializedVersion: 2
-        x: 125
-        y: 592
-        width: 125
-        height: 216
+        x: 0
+        y: 478
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -223,12 +223,12 @@ TextureImporter:
       name: PRChampion@FlippingRight_6
       rect:
         serializedVersion: 2
-        x: 250
-        y: 592
-        width: 125
-        height: 216
+        x: 190
+        y: 478
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -236,12 +236,12 @@ TextureImporter:
       name: PRChampion@FlippingRight_7
       rect:
         serializedVersion: 2
-        x: 375
-        y: 592
-        width: 125
-        height: 216
+        x: 380
+        y: 478
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -249,12 +249,12 @@ TextureImporter:
       name: PRChampion@FlippingRight_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 376
-        width: 125
-        height: 216
+        x: 570
+        y: 478
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -262,12 +262,12 @@ TextureImporter:
       name: PRChampion@FlippingRight_9
       rect:
         serializedVersion: 2
-        x: 125
-        y: 376
-        width: 125
-        height: 216
+        x: 760
+        y: 478
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -275,12 +275,12 @@ TextureImporter:
       name: PRChampion@FlippingRight_10
       rect:
         serializedVersion: 2
-        x: 250
-        y: 376
-        width: 125
-        height: 216
+        x: 0
+        y: 205
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -288,12 +288,12 @@ TextureImporter:
       name: PRChampion@FlippingRight_11
       rect:
         serializedVersion: 2
-        x: 375
-        y: 376
-        width: 125
-        height: 216
+        x: 190
+        y: 205
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -301,12 +301,12 @@ TextureImporter:
       name: PRChampion@FlippingRight_12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 160
-        width: 125
-        height: 216
+        x: 380
+        y: 205
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -314,12 +314,12 @@ TextureImporter:
       name: PRChampion@FlippingRight_13
       rect:
         serializedVersion: 2
-        x: 125
-        y: 160
-        width: 125
-        height: 216
+        x: 570
+        y: 205
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
@@ -327,12 +327,12 @@ TextureImporter:
       name: PRChampion@FlippingRight_14
       rect:
         serializedVersion: 2
-        x: 250
-        y: 160
-        width: 125
-        height: 216
+        x: 760
+        y: 205
+        width: 190
+        height: 273
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
