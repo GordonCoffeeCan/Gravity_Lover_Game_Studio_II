@@ -11,7 +11,7 @@ public class CharacterAnimatior : MonoBehaviour {
 
     private void Awake() {
         _rig = this.GetComponent<Rigidbody2D>();
-        _characterSprite = this.transform.FindChild("CharacterSprite");
+        _characterSprite = this.transform.FindChild("SpriteHolder/CharacterSprite");
         _anim = _characterSprite.GetComponent<Animator>();
     }
 
@@ -34,7 +34,7 @@ public class CharacterAnimatior : MonoBehaviour {
             _anim.SetLayerWeight(1, 1);
         }
 
-        if(Mathf.Abs(_rig.velocity.y) > 0.1f) {
+        if(Mathf.Abs(_rig.velocity.y) > 0.7f) {
             _anim.SetBool("InTheAir", true);
         } else {
             _anim.SetBool("InTheAir", false);
