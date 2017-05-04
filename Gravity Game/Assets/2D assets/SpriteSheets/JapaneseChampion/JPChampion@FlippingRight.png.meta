@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d99da25230f0dbb42a78b6062023a0f7
-timeCreated: 1493409110
+timeCreated: 1493925565
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -145,9 +145,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 800
-        width: 120
-        height: 224
+        y: 749
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,10 +157,10 @@ TextureImporter:
       name: JPChampion@FlippingRight_1
       rect:
         serializedVersion: 2
-        x: 120
-        y: 800
-        width: 120
-        height: 224
+        x: 154
+        y: 749
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,10 +170,10 @@ TextureImporter:
       name: JPChampion@FlippingRight_2
       rect:
         serializedVersion: 2
-        x: 240
-        y: 800
-        width: 120
-        height: 224
+        x: 308
+        y: 749
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,10 +183,10 @@ TextureImporter:
       name: JPChampion@FlippingRight_3
       rect:
         serializedVersion: 2
-        x: 360
-        y: 800
-        width: 120
-        height: 224
+        x: 462
+        y: 749
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,10 +196,10 @@ TextureImporter:
       name: JPChampion@FlippingRight_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 576
-        width: 120
-        height: 224
+        x: 616
+        y: 749
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -209,10 +209,10 @@ TextureImporter:
       name: JPChampion@FlippingRight_5
       rect:
         serializedVersion: 2
-        x: 120
-        y: 576
-        width: 120
-        height: 224
+        x: 770
+        y: 749
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,10 +222,10 @@ TextureImporter:
       name: JPChampion@FlippingRight_6
       rect:
         serializedVersion: 2
-        x: 240
-        y: 576
-        width: 120
-        height: 224
+        x: 0
+        y: 474
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,10 +235,10 @@ TextureImporter:
       name: JPChampion@FlippingRight_7
       rect:
         serializedVersion: 2
-        x: 360
-        y: 576
-        width: 120
-        height: 224
+        x: 154
+        y: 474
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,10 +248,10 @@ TextureImporter:
       name: JPChampion@FlippingRight_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 352
-        width: 120
-        height: 224
+        x: 308
+        y: 474
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -261,10 +261,10 @@ TextureImporter:
       name: JPChampion@FlippingRight_9
       rect:
         serializedVersion: 2
-        x: 120
-        y: 352
-        width: 120
-        height: 224
+        x: 462
+        y: 474
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -274,10 +274,10 @@ TextureImporter:
       name: JPChampion@FlippingRight_10
       rect:
         serializedVersion: 2
-        x: 240
-        y: 352
-        width: 120
-        height: 224
+        x: 616
+        y: 474
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,10 +287,10 @@ TextureImporter:
       name: JPChampion@FlippingRight_11
       rect:
         serializedVersion: 2
-        x: 360
-        y: 352
-        width: 120
-        height: 224
+        x: 770
+        y: 474
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,9 +301,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 120
-        height: 224
+        y: 199
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,10 +313,10 @@ TextureImporter:
       name: JPChampion@FlippingRight_13
       rect:
         serializedVersion: 2
-        x: 120
-        y: 128
-        width: 120
-        height: 224
+        x: 154
+        y: 199
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -326,10 +326,10 @@ TextureImporter:
       name: JPChampion@FlippingRight_14
       rect:
         serializedVersion: 2
-        x: 240
-        y: 128
-        width: 120
-        height: 224
+        x: 308
+        y: 199
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

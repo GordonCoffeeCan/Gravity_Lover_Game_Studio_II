@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 146e3f9e1864db84593720a7e93a372f
-timeCreated: 1493409151
+timeCreated: 1493925591
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -150,9 +150,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 812
-        width: 120
-        height: 212
+        y: 1773
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +162,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_1
       rect:
         serializedVersion: 2
-        x: 120
-        y: 812
-        width: 120
-        height: 212
+        x: 154
+        y: 1773
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -175,10 +175,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_2
       rect:
         serializedVersion: 2
-        x: 240
-        y: 812
-        width: 120
-        height: 212
+        x: 308
+        y: 1773
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,10 +188,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_3
       rect:
         serializedVersion: 2
-        x: 360
-        y: 812
-        width: 120
-        height: 212
+        x: 0
+        y: 1498
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,10 +201,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_4
       rect:
         serializedVersion: 2
-        x: 480
-        y: 812
-        width: 120
-        height: 212
+        x: 154
+        y: 1498
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,10 +214,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_5
       rect:
         serializedVersion: 2
-        x: 600
-        y: 812
-        width: 120
-        height: 212
+        x: 308
+        y: 1498
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,10 +227,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_6
       rect:
         serializedVersion: 2
-        x: 720
-        y: 812
-        width: 120
-        height: 212
+        x: 0
+        y: 1223
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -240,10 +240,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_7
       rect:
         serializedVersion: 2
-        x: 840
-        y: 812
-        width: 120
-        height: 212
+        x: 154
+        y: 1223
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -253,10 +253,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 600
-        width: 120
-        height: 212
+        x: 308
+        y: 1223
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,10 +266,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_9
       rect:
         serializedVersion: 2
-        x: 120
-        y: 600
-        width: 120
-        height: 212
+        x: 0
+        y: 948
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -279,10 +279,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_10
       rect:
         serializedVersion: 2
-        x: 240
-        y: 600
-        width: 120
-        height: 212
+        x: 154
+        y: 948
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,10 +292,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_11
       rect:
         serializedVersion: 2
-        x: 360
-        y: 600
-        width: 120
-        height: 212
+        x: 308
+        y: 948
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -305,10 +305,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_12
       rect:
         serializedVersion: 2
-        x: 480
-        y: 600
-        width: 120
-        height: 212
+        x: 0
+        y: 673
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,10 +318,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_13
       rect:
         serializedVersion: 2
-        x: 600
-        y: 600
-        width: 120
-        height: 212
+        x: 154
+        y: 673
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,10 +331,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_14
       rect:
         serializedVersion: 2
-        x: 720
-        y: 600
-        width: 120
-        height: 212
+        x: 308
+        y: 673
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -344,10 +344,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_15
       rect:
         serializedVersion: 2
-        x: 840
-        y: 600
-        width: 120
-        height: 212
+        x: 0
+        y: 398
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,10 +357,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 388
-        width: 120
-        height: 212
+        x: 154
+        y: 398
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -370,10 +370,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_17
       rect:
         serializedVersion: 2
-        x: 120
-        y: 388
-        width: 120
-        height: 212
+        x: 308
+        y: 398
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -383,10 +383,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_18
       rect:
         serializedVersion: 2
-        x: 240
-        y: 388
-        width: 120
-        height: 212
+        x: 0
+        y: 123
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -396,10 +396,10 @@ TextureImporter:
       name: JPChampion@LandingLeft_19
       rect:
         serializedVersion: 2
-        x: 360
-        y: 388
-        width: 120
-        height: 212
+        x: 154
+        y: 123
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}

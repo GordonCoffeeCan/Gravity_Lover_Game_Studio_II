@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 6628d4e915b969641a1f38ea327dcc73
-timeCreated: 1493409522
+timeCreated: 1493925553
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -159,9 +159,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1777
-        width: 124
-        height: 271
+        y: 1773
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +171,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_1
       rect:
         serializedVersion: 2
-        x: 124
-        y: 1777
-        width: 124
-        height: 271
+        x: 154
+        y: 1773
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_2
       rect:
         serializedVersion: 2
-        x: 248
-        y: 1777
-        width: 124
-        height: 271
+        x: 308
+        y: 1773
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -197,10 +197,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_3
       rect:
         serializedVersion: 2
-        x: 372
-        y: 1777
-        width: 124
-        height: 271
+        x: 462
+        y: 1773
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +210,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_4
       rect:
         serializedVersion: 2
-        x: 496
-        y: 1777
-        width: 124
-        height: 271
+        x: 616
+        y: 1773
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -223,10 +223,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_5
       rect:
         serializedVersion: 2
-        x: 620
-        y: 1777
-        width: 124
-        height: 271
+        x: 770
+        y: 1773
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_6
       rect:
         serializedVersion: 2
-        x: 744
-        y: 1777
-        width: 124
-        height: 271
+        x: 0
+        y: 1498
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,10 +249,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_7
       rect:
         serializedVersion: 2
-        x: 868
-        y: 1777
-        width: 124
-        height: 271
+        x: 154
+        y: 1498
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -262,10 +262,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1506
-        width: 124
-        height: 271
+        x: 308
+        y: 1498
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -275,10 +275,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_9
       rect:
         serializedVersion: 2
-        x: 124
-        y: 1506
-        width: 124
-        height: 271
+        x: 462
+        y: 1498
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,10 +288,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_10
       rect:
         serializedVersion: 2
-        x: 248
-        y: 1506
-        width: 124
-        height: 271
+        x: 616
+        y: 1498
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -301,10 +301,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_11
       rect:
         serializedVersion: 2
-        x: 372
-        y: 1506
-        width: 124
-        height: 271
+        x: 770
+        y: 1498
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,10 +314,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_12
       rect:
         serializedVersion: 2
-        x: 496
-        y: 1506
-        width: 124
-        height: 271
+        x: 0
+        y: 1223
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -327,10 +327,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_13
       rect:
         serializedVersion: 2
-        x: 620
-        y: 1506
-        width: 124
-        height: 271
+        x: 154
+        y: 1223
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -340,10 +340,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_14
       rect:
         serializedVersion: 2
-        x: 744
-        y: 1506
-        width: 124
-        height: 271
+        x: 308
+        y: 1223
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,10 +353,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_15
       rect:
         serializedVersion: 2
-        x: 868
-        y: 1506
-        width: 124
-        height: 271
+        x: 462
+        y: 1223
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -366,10 +366,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1235
-        width: 124
-        height: 271
+        x: 616
+        y: 1223
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -379,10 +379,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_17
       rect:
         serializedVersion: 2
-        x: 124
-        y: 1235
-        width: 124
-        height: 271
+        x: 770
+        y: 1223
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -392,10 +392,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_18
       rect:
         serializedVersion: 2
-        x: 248
-        y: 1235
-        width: 124
-        height: 271
+        x: 0
+        y: 948
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -405,10 +405,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_19
       rect:
         serializedVersion: 2
-        x: 372
-        y: 1235
-        width: 124
-        height: 271
+        x: 154
+        y: 948
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -418,10 +418,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_20
       rect:
         serializedVersion: 2
-        x: 496
-        y: 1235
-        width: 124
-        height: 271
+        x: 308
+        y: 948
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -431,10 +431,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_21
       rect:
         serializedVersion: 2
-        x: 620
-        y: 1235
-        width: 124
-        height: 271
+        x: 462
+        y: 948
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -444,10 +444,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_22
       rect:
         serializedVersion: 2
-        x: 744
-        y: 1235
-        width: 124
-        height: 271
+        x: 616
+        y: 948
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,10 +457,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_23
       rect:
         serializedVersion: 2
-        x: 868
-        y: 1235
-        width: 124
-        height: 271
+        x: 770
+        y: 948
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -471,9 +471,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 964
-        width: 124
-        height: 271
+        y: 673
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -483,10 +483,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_25
       rect:
         serializedVersion: 2
-        x: 124
-        y: 964
-        width: 124
-        height: 271
+        x: 154
+        y: 673
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -496,10 +496,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_26
       rect:
         serializedVersion: 2
-        x: 248
-        y: 964
-        width: 124
-        height: 271
+        x: 308
+        y: 673
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -509,10 +509,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_27
       rect:
         serializedVersion: 2
-        x: 372
-        y: 964
-        width: 124
-        height: 271
+        x: 462
+        y: 673
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,10 +522,10 @@ TextureImporter:
       name: JPChampion@ConsentingRight_28
       rect:
         serializedVersion: 2
-        x: 496
-        y: 964
-        width: 124
-        height: 271
+        x: 616
+        y: 673
+        width: 154
+        height: 275
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
