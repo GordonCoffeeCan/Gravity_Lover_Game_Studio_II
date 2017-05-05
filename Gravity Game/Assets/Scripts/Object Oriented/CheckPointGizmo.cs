@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CheckPointGizmos : MonoBehaviour {
+public class CheckPointGizmo : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
@@ -13,4 +13,12 @@ public class CheckPointGizmos : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void OnDrawGizmos() {
+        Gizmos.DrawIcon(this.transform.position, "checkpointIcon.png", true);
+    }
+
+    private void OnDrawGizmos() {
+        Gizmos.DrawIcon(this.transform.position, "checkpointIcon.png", true);
+    }
 }
