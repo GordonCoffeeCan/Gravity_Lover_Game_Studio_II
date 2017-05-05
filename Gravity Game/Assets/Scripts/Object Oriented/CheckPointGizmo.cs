@@ -17,8 +17,4 @@ public class CheckPointGizmo : MonoBehaviour {
     private void OnDrawGizmos() {
         Gizmos.DrawIcon(this.transform.position, "checkpointIcon.png", true);
     }
-
-    private void OnDrawGizmos() {
-        Gizmos.DrawIcon(this.transform.position, "checkpointIcon.png", true);
-    }
 }
