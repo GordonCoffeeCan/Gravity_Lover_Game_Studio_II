@@ -7,6 +7,8 @@ public class CharacterAnimatior : MonoBehaviour {
     private Transform _characterSprite;
     private Animator _anim;
 
+    private string _gravityShiftKey;
+
     RaycastHit2D _rayHit;
 
     private void Awake() {
@@ -17,12 +19,16 @@ public class CharacterAnimatior : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-		
-	}
+        //Detect which player is and set control scheme
+        if (this.tag == "Player1") {
+            _gravityShiftKey = "ShiftButton";
+        } else if (this.tag == "Player2") {
+            _gravityShiftKey = "GamePad_Shift";
+        }
+    }
 
     // Update is called once per frame
     void Update() {
-        Debug.Log(_rig.velocity.x);
 
         if ((_rig.velocity.x * _rig.gravityScale) > 0) {
             _anim.SetFloat("Speed", 1);
@@ -34,10 +40,16 @@ public class CharacterAnimatior : MonoBehaviour {
             _anim.SetLayerWeight(1, 1);
         }
 
-        if(Mathf.Abs(_rig.velocity.y) > 0.7f) {
+        if(Mathf.Abs(_rig.velocity.y) > 0.1f) {
             _anim.SetBool("InTheAir", true);
         } else {
             _anim.SetBool("InTheAir", false);
+        }
+
+        if (Input.GetButton(_gravityShiftKey)) {
+            _anim.SetBool("Consent", true);
+        } else {
+            _anim.SetBool("Consent", false);
         }
     }
 }

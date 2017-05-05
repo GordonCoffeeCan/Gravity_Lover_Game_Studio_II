@@ -13,8 +13,8 @@ public class GravityTrigger : MonoBehaviour {
     private Transform player2;
     private float distance;
 
-    private Light glow1;
-    private Light glow2;
+    //private Light glow1;
+    //private Light glow2;
 
     private float distancePercentage;
 
@@ -48,8 +48,8 @@ public class GravityTrigger : MonoBehaviour {
         player1 = GameObject.FindWithTag("Player1").transform;
         player2 = GameObject.FindWithTag("Player2").transform;
 
-        glow1 = player1.FindChild("Point light").GetComponent<Light>();
-        glow2 = player2.FindChild("Point light").GetComponent<Light>();
+        //glow1 = player1.FindChild("Point light").GetComponent<Light>();
+        //glow2 = player2.FindChild("Point light").GetComponent<Light>();
 
     }
 
@@ -87,8 +87,8 @@ public class GravityTrigger : MonoBehaviour {
     {
         if (distance <= range)
         {
-            glow1.enabled = true;
-            glow2.enabled = true;
+            //glow1.enabled = true;
+            //glow2.enabled = true;
             inShiftRange = true;
 
             
@@ -96,8 +96,8 @@ public class GravityTrigger : MonoBehaviour {
         }
         else
         {
-            glow1.enabled = false;
-            glow2.enabled = false;
+            //glow1.enabled = false;
+            //glow2.enabled = false;
             inShiftRange = false;
 
             

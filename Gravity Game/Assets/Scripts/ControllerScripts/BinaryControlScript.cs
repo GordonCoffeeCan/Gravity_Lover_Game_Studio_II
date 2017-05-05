@@ -49,6 +49,7 @@ public class BinaryControlScript : MonoBehaviour {
         _rig = this.GetComponent<Rigidbody2D>();
         _tag = this.gameObject.tag;
         //_playerEffect = transform.FindChild("PlayerEffect").GetComponent<ParticleSystem>();
+        _consentHaloAnim = this.transform.FindChild("ConsentHalo").GetComponent<Animator>();
         _playerRing = gameObject.GetComponent<Animator>(); //gets animator
 
         _playerAudio = gameObject.GetComponent<AudioSource>();
@@ -93,6 +94,7 @@ public class BinaryControlScript : MonoBehaviour {
             {
 
                 //_playerEffect.gameObject.SetActive(true);
+                _consentHaloAnim.SetBool("ShowHalo", true);
                 _playerRing.SetBool("wantsToSwitch", true); //initializes the ring animation
                 _playerRing.speed = 3.0f;//speeds up the animation
 
@@ -107,7 +109,7 @@ public class BinaryControlScript : MonoBehaviour {
                 if (_tag == "Player1")
                 {
                    NewGameData.isPlayer1ReadytoShift = true;
-                   Debug.Log("Player 1 wants to switch");
+                   //Debug.Log("Player 1 wants to switch");
                 }
                 if (_tag == "Player2")
                 {
@@ -129,6 +131,7 @@ public class BinaryControlScript : MonoBehaviour {
                 }
 
                 //_playerEffect.gameObject.SetActive(false);
+                _consentHaloAnim.SetBool("ShowHalo", false);
                 _playerRing.SetBool("wantsToSwitch", false);
                 _playerAudio.Stop();
             }

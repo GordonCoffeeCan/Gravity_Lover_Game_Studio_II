@@ -17,7 +17,7 @@ public class PlayerNewHoverController : MonoBehaviour
     private Rigidbody2D _rig;
     private string _tag;
 
-    private ParticleSystem _playerEffect;
+    //private ParticleSystem _playerEffect;
     private Animator _playerRing; //Ring Animation to indicate switch
 
     private AudioSource _playerAudio;
@@ -43,7 +43,7 @@ public class PlayerNewHoverController : MonoBehaviour
     {
         _rig = this.GetComponent<Rigidbody2D>();
         _tag = this.gameObject.tag;
-        _playerEffect = transform.FindChild("PlayerEffect").GetComponent<ParticleSystem>();
+        //_playerEffect = transform.FindChild("PlayerEffect").GetComponent<ParticleSystem>();
         _playerRing = gameObject.GetComponent<Animator>(); //gets animator
 
         _playerAudio = gameObject.GetComponent<AudioSource>();
@@ -116,7 +116,7 @@ public class PlayerNewHoverController : MonoBehaviour
             if (Input.GetButton(_gravityShiftKey))
             {
                 
-                    _playerEffect.gameObject.SetActive(true);
+                    //_playerEffect.gameObject.SetActive(true);
                     _playerRing.SetBool("wantsToSwitch", true); //initializes the ring animation
                     _playerRing.speed = 3.0f;//speeds up the animation
 
@@ -265,7 +265,7 @@ public class PlayerNewHoverController : MonoBehaviour
             GameObject.FindWithTag("Player1").GetComponent<Rigidbody2D>().gravityScale = GameData.player1GravityScale;
         }
 
-        _playerEffect.gameObject.SetActive(false);
+        //_playerEffect.gameObject.SetActive(false);
         _playerRing.SetBool("wantsToSwitch", false);
         _playerAudio.Stop();
 
