@@ -70,14 +70,17 @@ public class GravityTrigger : MonoBehaviour {
 
         if (distance > (0.4 * separateRange)) //0.4 is minimum
         {
-            distancePercentage = ((distance / separateRange) * 60) * Time.deltaTime;
+            //distancePercentage = ((distance / separateRange) * 60) * Time.deltaTime;
+            distancePercentage = distance / separateRange;
         }
         else
         {
             distancePercentage = 0;
         }
 
-        panel.color = new Color(1, 1, 1, distancePercentage);
+        Debug.Log(distancePercentage);
+
+        panel.color = new Color(1, 1, 1, Mathf.Lerp(panel.color.a, distancePercentage, 2.5f * Time.deltaTime));
 
         
 	}

@@ -40,10 +40,6 @@ public class CharacterAnimatior : MonoBehaviour {
             _anim.SetFloat("Speed", 0);
 
         }
-
-        if (this.tag == "Player2") {
-            Debug.Log(_anim.GetLayerWeight(1));
-        }
         
 
         if(Mathf.Abs(_rig.velocity.y) > 0.2f) {
