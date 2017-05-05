@@ -33,14 +33,20 @@ public class CharacterAnimatior : MonoBehaviour {
         if ((_rig.velocity.x * _rig.gravityScale) > 0) {
             _anim.SetFloat("Speed", 1);
             _anim.SetLayerWeight(1, 0);
-        } else if ((_rig.velocity.x * _rig.gravityScale) == 0) {
-            _anim.SetFloat("Speed", 0);
-        } else {
+        }else if ((_rig.velocity.x * _rig.gravityScale) < 0) {
             _anim.SetFloat("Speed", 1);
             _anim.SetLayerWeight(1, 1);
+        } else if((_rig.velocity.x * _rig.gravityScale) == 0) {
+            _anim.SetFloat("Speed", 0);
+
         }
 
-        if(Mathf.Abs(_rig.velocity.y) > 0.1f) {
+        if (this.tag == "Player2") {
+            Debug.Log(_anim.GetLayerWeight(1));
+        }
+        
+
+        if(Mathf.Abs(_rig.velocity.y) > 0.2f) {
             _anim.SetBool("InTheAir", true);
         } else {
             _anim.SetBool("InTheAir", false);
