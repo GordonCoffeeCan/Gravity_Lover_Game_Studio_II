@@ -68,10 +68,9 @@ public class GravityTrigger : MonoBehaviour {
         inRange();
         OutRange();
 
-        //distancePercentage = distance*0.00002f*255;
-        if (distance > (0.4 * separateRange))
+        if (distance > (0.4 * separateRange)) //0.4 is minimum
         {
-            distancePercentage = ((distance / separateRange) * 50) * Time.deltaTime;
+            distancePercentage = ((distance / separateRange) * 60) * Time.deltaTime;
         }
         else
         {
