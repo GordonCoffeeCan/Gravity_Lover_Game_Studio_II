@@ -125,6 +125,8 @@ public class MusicSource : MonoBehaviour
         ActiveAudA = false;
         scheduledPlayTime = startTime;
         scheduledEndTime = System.Double.MinValue;
+
+        
     }
 
 }
