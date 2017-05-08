@@ -27,7 +27,7 @@ public class PlayersCarrierBehavior : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if(this.name == "PlayerCarrier") {
+        if(this.name == "PlayerCarrier" || this.name == "ELEVATOR2") {
             if (_player1On == true && _player2On == true) {
                 _launchTimer -= Time.deltaTime;
                 if (_launchTimer <= 0) {
@@ -52,7 +52,6 @@ public class PlayersCarrierBehavior : MonoBehaviour {
                 _launchTimer = launchTimer;
             }
         }
-        
 		
 	}
 
