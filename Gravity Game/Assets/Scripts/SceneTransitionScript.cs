@@ -37,7 +37,7 @@ public class SceneTransitionScript : MonoBehaviour {
 		if (player1Trigger == true && player2Trigger == true) {
 			MixerScript myMixerScript  = GameObject.Find ("MusicSource").GetComponent<MixerScript> ();
 
-			myMixerScript.blackFade = true;
+			//myMixerScript.blackFade = true;
 
             if(isSceneLoaded == false) {
 
