@@ -78,8 +78,6 @@ public class GravityTrigger : MonoBehaviour {
             distancePercentage = 0;
         }
 
-        Debug.Log(distancePercentage);
-
         panel.color = new Color(1, 1, 1, Mathf.Lerp(panel.color.a, distancePercentage, 2.5f * Time.deltaTime));
 
         

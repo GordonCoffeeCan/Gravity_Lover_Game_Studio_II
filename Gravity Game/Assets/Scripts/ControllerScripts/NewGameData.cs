@@ -15,6 +15,10 @@ public class NewGameData : MonoBehaviour {
     public static bool level03Done = false;
     public static bool level04Done = false;
 
+    public static string previousLevelName = null;
+
+    public static Quaternion currentEnvPivotAngle;
+
     // Use this for initialization
     void Start () {
 		
