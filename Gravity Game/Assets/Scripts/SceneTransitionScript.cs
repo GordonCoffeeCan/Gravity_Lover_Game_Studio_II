@@ -37,6 +37,29 @@ public class SceneTransitionScript : MonoBehaviour {
 		if (player1Trigger == true && player2Trigger == true) {
             if(isSceneLoaded == false) {
 
+                if(SceneManager.GetActiveScene().name== "tutorialScene")
+                {
+                    NewGameData.tutorialLevelDone = true;
+                }
+
+                if (SceneManager.GetActiveScene().name == "SpokeOnePrototype")
+                {
+                    NewGameData.level02Done = true;
+                }
+
+                if (SceneManager.GetActiveScene().name == "SpokeTwoPrototype")
+                {
+                    NewGameData.level03Done = true;
+                }
+
+                if (SceneManager.GetActiveScene().name == "SpokeThreePrototype")
+                {
+                    NewGameData.level04Done = true;
+                }
+
+
+
+
                 sceneToLoad = sceneToLoad2.name;
 
                 SceneManager.LoadScene(sceneToLoad);
