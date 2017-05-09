@@ -13,7 +13,7 @@ public class SceneTransitionScript : MonoBehaviour {
 
 	public string sceneToLoad;
 
-    public Object sceneToLoad2;
+   // public Object sceneToLoad2;
   
 
 
