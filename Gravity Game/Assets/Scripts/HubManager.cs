@@ -23,7 +23,7 @@ public class HubManager : MonoBehaviour {
         level04Finished
     }
 
-    public LevelState levelState;
+    public static LevelState levelState;
 
     private void Awake() {
         _playerPR = GameObject.Find("PlayerPersian").transform;
@@ -56,6 +56,7 @@ public class HubManager : MonoBehaviour {
             _playerJP.position = levelExit[3].position;
         }
 
+        _envPivot.rotation = NewGameData.currentEnvPivotAngle;
     }
 	
 	// Update is called once per frame
@@ -76,5 +77,8 @@ public class HubManager : MonoBehaviour {
             default:
                 break;
         }
-	}
+
+        NewGameData.currentEnvPivotAngle = _envPivot.rotation;
+
+    }
 }

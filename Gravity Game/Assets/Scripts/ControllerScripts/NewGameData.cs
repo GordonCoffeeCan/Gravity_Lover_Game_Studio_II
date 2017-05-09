@@ -17,6 +17,8 @@ public class NewGameData : MonoBehaviour {
 
     public static string previousLevelName = null;
 
+    public static Quaternion currentEnvPivotAngle;
+
     // Use this for initialization
     void Start () {
 		
