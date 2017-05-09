@@ -39,21 +39,25 @@ public class SceneTransitionScript : MonoBehaviour {
 
                 if(SceneManager.GetActiveScene().name== "tutorialScene")
                 {
+                    NewGameData.previousLevelName = "tutorialScene";
                     NewGameData.tutorialLevelDone = true;
                 }
 
                 if (SceneManager.GetActiveScene().name == "SpokeOnePrototype")
                 {
+                    NewGameData.previousLevelName = "SpokeOnePrototype";
                     NewGameData.level02Done = true;
                 }
 
                 if (SceneManager.GetActiveScene().name == "SpokeTwoPrototype")
                 {
+                    NewGameData.previousLevelName = "SpokeTwoPrototype";
                     NewGameData.level03Done = true;
                 }
 
                 if (SceneManager.GetActiveScene().name == "SpokeThreePrototype")
                 {
+                    NewGameData.previousLevelName = "SpokeThreePrototype";
                     NewGameData.level04Done = true;
                 }
 

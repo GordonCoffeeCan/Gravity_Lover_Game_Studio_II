@@ -15,6 +15,8 @@ public class NewGameData : MonoBehaviour {
     public static bool level03Done = false;
     public static bool level04Done = false;
 
+    public static string previousLevelName = null;
+
     // Use this for initialization
     void Start () {
 		

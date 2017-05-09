@@ -3,9 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HubManager : MonoBehaviour {
-    public Transform envPivot;
+    private Transform _envPivot;
+
+    private Transform _playerPR;
+    private Transform _playerJP;
+
+    private List<Transform> levelExit;
+    
     private float _rotationSpeed = 2;
+
     private Animator _envPivotAnim;
+
+    public static List<Animator> doors;
 
     public enum LevelState {
         Null,
@@ -16,9 +25,34 @@ public class HubManager : MonoBehaviour {
 
     public LevelState levelState;
 
+    private void Awake() {
+        _playerPR = GameObject.Find("PlayerPersian").transform;
+        _playerJP = GameObject.Find("PlayerJapanese").transform;
+
+        _envPivot = GameObject.Find("EnvPivot").transform;
+        _envPivotAnim = _envPivot.GetComponent<Animator>();
+
+        for (int i = 0; i < 4; i++) {
+            doors.Add(GameObject.Find("Door" + (i + 1) + "Trigger").GetComponent<Animator>());
+            levelExit.Add(GameObject.Find("Level" + (i + 1) + "Exit").transform);
+        }
+    }
+
     // Use this for initialization
     void Start () {
-        _envPivotAnim = envPivot.GetComponent<Animator>();
+        if (NewGameData.tutorialLevelDone == true && NewGameData.previousLevelName == "tutorialScene") {
+            _playerPR.position = levelExit[0].position;
+            _playerJP.position = levelExit[0].position;
+        } else if (NewGameData.level02Done == true && NewGameData.previousLevelName == "SpokeOnePrototype") {
+            _playerPR.position = levelExit[1].position;
+            _playerJP.position = levelExit[1].position;
+        } else if (NewGameData.level03Done == true && NewGameData.previousLevelName == "SpokeTwoPrototype") {
+            _playerPR.position = levelExit[2].position;
+            _playerJP.position = levelExit[2].position;
+        } else if (NewGameData.level04Done == true && NewGameData.previousLevelName == "SpokeThreePrototype") {
+            _playerPR.position = levelExit[3].position;
+            _playerJP.position = levelExit[3].position;
+        }
     }
 	
 	// Update is called once per frame
