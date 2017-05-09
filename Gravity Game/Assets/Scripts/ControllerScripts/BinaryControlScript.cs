@@ -19,6 +19,7 @@ public class BinaryControlScript : MonoBehaviour {
 
     //private ParticleSystem _playerEffect;
     private Animator _consentHaloAnim;
+    private SpriteRenderer _consentHalo;
     private Animator _playerRing; //Ring Animation to indicate switch
 
     private AudioSource _playerAudio;
@@ -50,6 +51,7 @@ public class BinaryControlScript : MonoBehaviour {
         _tag = this.gameObject.tag;
         //_playerEffect = transform.FindChild("PlayerEffect").GetComponent<ParticleSystem>();
         _consentHaloAnim = this.transform.FindChild("ConsentHalo").GetComponent<Animator>();
+        _consentHalo = this.transform.FindChild("ConsentHalo").GetComponent<SpriteRenderer>();
         _playerRing = gameObject.GetComponent<Animator>(); //gets animator
 
         _playerAudio = gameObject.GetComponent<AudioSource>();
@@ -87,6 +89,7 @@ public class BinaryControlScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        _consentHalo.color = new Color(1, 1, 1, 0);
 
         if (GravityTrigger.inShiftRange == true)
         {
@@ -109,13 +112,21 @@ public class BinaryControlScript : MonoBehaviour {
                 if (_tag == "Player1")
                 {
                    NewGameData.isPlayer1ReadytoShift = true;
-                   //Debug.Log("Player 1 wants to switch");
+                   _consentHalo.color = new Color32(0, 255, 255, 255);
+                    //Debug.Log("Player 1 wants to switch");
                 }
                 if (_tag == "Player2")
                 {
                     NewGameData.isPlayer2ReadytoShift = true;
+                    _consentHalo.color = Color.red;
                     //Debug.Log("Player 2 wants to switch");
                 }
+
+                if (NewGameData.isPlayer1ReadytoShift == true && NewGameData.isPlayer2ReadytoShift == true) {
+                    _consentHalo.color = new Color(1, 1, 1, 1);
+                }
+
+                Debug.Log(_consentHalo.color);
             }
             else
             {
