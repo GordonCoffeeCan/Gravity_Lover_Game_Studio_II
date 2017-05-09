@@ -33,6 +33,11 @@ public class HubManager : MonoBehaviour {
     public static LevelState levelState;
 
     private void Awake() {
+        
+    }
+
+    // Use this for initialization
+    void Start () {
         _playerPR = GameObject.Find("PlayerPersian").transform;
         _playerJP = GameObject.Find("PlayerJapanese").transform;
 
@@ -44,23 +49,27 @@ public class HubManager : MonoBehaviour {
 
         levelExit = new List<Transform>();
         doors = new List<Animator>();
+
         for (int i = 0; i < 4; i++) {
-            doors.Add(GameObject.Find("HubLevelDoor" + (i + 1)).transform.GetComponent<Animator>());
+            doors.Add(GameObject.Find("HubLevelDoor" + (i + 1)).GetComponent<Animator>());
             levelExit.Add(GameObject.Find("Level" + (i + 1) + "Exit").transform);
         }
-    }
 
-    // Use this for initialization
-    void Start () {
         if (NewGameData.tutorialLevelDone == true && NewGameData.previousLevelName == "tutorialScene") {
             _playerPR.position = levelExit[0].position;
             _playerJP.position = levelExit[0].position;
         } else if (NewGameData.level02Done == true && NewGameData.previousLevelName == "SpokeOnePrototype") {
             _playerPR.position = levelExit[1].position;
             _playerJP.position = levelExit[1].position;
+            if(NewGameData.level03Done == false) {
+                doors[2].SetBool("Open", true);
+            }
         } else if (NewGameData.level03Done == true && NewGameData.previousLevelName == "SpokeTwoPrototype") {
             _playerPR.position = levelExit[2].position;
             _playerJP.position = levelExit[2].position;
+            if (NewGameData.level02Done == false) {
+                doors[1].SetBool("Open", true);
+            }
         } else if (NewGameData.level04Done == true && NewGameData.previousLevelName == "SpokeThreePrototype") {
             _playerPR.position = levelExit[3].position;
             _playerJP.position = levelExit[3].position;
