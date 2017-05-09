@@ -6,6 +6,7 @@ public class KeyBehavior : MonoBehaviour {
     public string sceneName;
     public Animator doorA;
     public Animator doorB;
+	public AudioSource SFX;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +25,7 @@ public class KeyBehavior : MonoBehaviour {
             if(sceneName == "SpokeTwoPrototype") {
                 if(doorA != null) {
                     doorA.SetBool("Open", true);
+					SFX.Play ();
                 }
             }
 
@@ -35,6 +37,7 @@ public class KeyBehavior : MonoBehaviour {
             if (sceneName == "SpokeTwoPrototype") {
                 if (doorB != null) {
                     doorB.SetBool("Open", true);
+					SFX.Play ();
                 }
             }
 

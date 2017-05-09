@@ -13,6 +13,7 @@ public class CheckPointCollision : MonoBehaviour {
     public GameObject player1SpawnPoint;
     public GameObject player2SpawnPoint;
 
+
     // Use this for initialization
     void Start () {
 		
@@ -22,8 +23,7 @@ public class CheckPointCollision : MonoBehaviour {
     void OnTriggerEnter2D(Collider2D player)
     {
         if (player.gameObject.tag == "Player1" || player.gameObject.tag == "Player2")
-        {
-
+		{
             pos1 = player1SpawnPoint.transform.position;
             pos2 = player2SpawnPoint.transform.position;
 
