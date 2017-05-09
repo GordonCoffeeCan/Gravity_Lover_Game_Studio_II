@@ -26,12 +26,11 @@ public class DeathScript : MonoBehaviour {
     {
        if(collider.gameObject.tag == "Player1" || collider.gameObject.tag == "Player2")
         {
-<<<<<<< HEAD
+
 			//MixerScript myMixerScript  = GameObject.Find ("MusicSource").GetComponent<MixerScript> ();
 
 			//myMixerScript.blackFade = true;
-=======
->>>>>>> master
+
             Invoke("Restart", deathDelay);
 
             player1 = GameObject.FindWithTag("Player1").gameObject;
