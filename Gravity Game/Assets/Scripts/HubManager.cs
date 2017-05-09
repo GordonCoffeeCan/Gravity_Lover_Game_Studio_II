@@ -3,6 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class HubManager : MonoBehaviour {
+    public bool tutorialLevelDone = false;
+    public bool level02Done = false;
+    public bool level03Done = false;
+    public bool level04Done = false;
+
     private Transform _envPivot;
 
     private Transform _playerPR;
@@ -46,10 +51,6 @@ public class HubManager : MonoBehaviour {
             doors.Add(GameObject.Find("HubLevelDoor" + (i + 1)).transform.GetComponent<Animator>());
             levelExit.Add(GameObject.Find("Level" + (i + 1) + "Exit").transform);
         }
-
-        _level02Portal.SetActive(false);
-        _level03Portal.SetActive(false);
-        _level04Portal.SetActive(false);
     }
 
     // Use this for initialization
@@ -68,11 +69,21 @@ public class HubManager : MonoBehaviour {
             _playerJP.position = levelExit[3].position;
         }
 
+        _level02Portal.SetActive(false);
+        _level03Portal.SetActive(false);
+        _level04Portal.SetActive(false);
+
         _envPivot.rotation = NewGameData.currentEnvPivotAngle;
     }
 	
 	// Update is called once per frame
 	void Update () {
+
+        NewGameData.tutorialLevelDone = tutorialLevelDone;
+        NewGameData.level02Done = level02Done;
+        NewGameData.level03Done = level03Done;
+        NewGameData.level04Done = level04Done;
+
         switch (levelState) {
             case LevelState.level01Finished:
                 _envPivotAnim.SetBool("ToLevel02and03", true);
@@ -89,6 +100,8 @@ public class HubManager : MonoBehaviour {
             default:
                 break;
         }
+        Debug.Log("level02Done:" + NewGameData.level02Done);
+        Debug.Log("level03Done:" + NewGameData.level03Done);
 
         NewGameData.currentEnvPivotAngle = _envPivot.rotation;
 

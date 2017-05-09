@@ -56,7 +56,7 @@ public class HubTriggerManager : MonoBehaviour {
                 RotateHub();
                 break;
             case "Door4CloseTrigger":
-                DoorAnim(3, false);
+                //DoorAnim(3, false);
                 break;
         }
 	}
@@ -89,11 +89,16 @@ public class HubTriggerManager : MonoBehaviour {
 
     private void RotateHub() {
         if (playerPREntered == true && playerJPEntered == true) {
-            if (NewGameData.tutorialLevelDone == true) {
+            if (NewGameData.tutorialLevelDone == true && NewGameData.level02Done == false && NewGameData.level03Done == false) {
                 HubManager.levelState = HubManager.LevelState.level01Finished;
-            }else if (NewGameData.level02Done == true && NewGameData.level03Done == true) {
+            }
+
+            if (NewGameData.tutorialLevelDone == true && NewGameData.level02Done == true && NewGameData.level03Done == true) {
                 HubManager.levelState = HubManager.LevelState.level02And03Finished;
-            }else if (NewGameData.level04Done == true) {
+                DoorAnim(3, true);
+            }
+
+            if (NewGameData.level04Done == true) {
 
             }
         }
