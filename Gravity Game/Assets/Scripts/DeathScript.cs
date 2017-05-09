@@ -28,7 +28,7 @@ public class DeathScript : MonoBehaviour {
         {
 			MixerScript myMixerScript  = GameObject.Find ("MusicSource").GetComponent<MixerScript> ();
 
-			myMixerScript.blackFade = true;
+			//myMixerScript.blackFade = true;
             Invoke("Restart", deathDelay);
 
             player1 = GameObject.FindWithTag("Player1").gameObject;

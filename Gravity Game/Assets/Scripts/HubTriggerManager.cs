@@ -31,14 +31,28 @@ public class HubTriggerManager : MonoBehaviour {
                 DoorAnim(0, false);
                 DoorAnim(1, true);
                 DoorAnim(2, true);
+                if (NewGameData.level02Done == false) {
+                    HubManager._level02Portal.SetActive(true);
+                }
+                if(NewGameData.level03Done == false) {
+                    HubManager._level03Portal.SetActive(true);
+                }
+                
                 RotateHub();
                 break;
             case "Door2CloseTrigger":
-                DoorAnim(1, false);
+                if (NewGameData.level02Done == true) {
+                    DoorAnim(1, false);
+                }
                 RotateHub();
                 break;
             case "Door3CloseTrigger":
-                DoorAnim(2, false);
+                if (NewGameData.level03Done == true) {
+                    DoorAnim(2, false);
+                }
+                if (NewGameData.level04Done == false) {
+                    HubManager._level04Portal.SetActive(true);
+                }
                 RotateHub();
                 break;
             case "Door4CloseTrigger":

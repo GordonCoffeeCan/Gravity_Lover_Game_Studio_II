@@ -14,6 +14,10 @@ public class HubManager : MonoBehaviour {
 
     private Animator _envPivotAnim;
 
+    public static GameObject _level02Portal;
+    public static GameObject _level03Portal;
+    public static GameObject _level04Portal;
+
     public static List<Animator> doors;
 
     public enum LevelState {
@@ -29,6 +33,10 @@ public class HubManager : MonoBehaviour {
         _playerPR = GameObject.Find("PlayerPersian").transform;
         _playerJP = GameObject.Find("PlayerJapanese").transform;
 
+        _level02Portal = GameObject.Find("HubLevel2Portal");
+        _level03Portal = GameObject.Find("HubLevel3Portal");
+        _level04Portal = GameObject.Find("HubLevel4Portal");
+
         _envPivot = GameObject.Find("EnvPivot").transform;
         _envPivotAnim = _envPivot.GetComponent<Animator>();
 
@@ -38,6 +46,10 @@ public class HubManager : MonoBehaviour {
             doors.Add(GameObject.Find("HubLevelDoor" + (i + 1)).transform.GetComponent<Animator>());
             levelExit.Add(GameObject.Find("Level" + (i + 1) + "Exit").transform);
         }
+
+        _level02Portal.SetActive(false);
+        _level03Portal.SetActive(false);
+        _level04Portal.SetActive(false);
     }
 
     // Use this for initialization

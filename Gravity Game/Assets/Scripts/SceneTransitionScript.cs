@@ -35,9 +35,9 @@ public class SceneTransitionScript : MonoBehaviour {
 
     void Update (){
 		if (player1Trigger == true && player2Trigger == true) {
-			MixerScript myMixerScript  = GameObject.Find ("MusicSource").GetComponent<MixerScript> ();
+			//MixerScript myMixerScript  = GameObject.Find ("MusicSource").GetComponent<MixerScript> ();
 
-			myMixerScript.blackFade = true;
+			//myMixerScript.blackFade = true;
 
             if(isSceneLoaded == false) {
 
@@ -89,6 +89,8 @@ public class SceneTransitionScript : MonoBehaviour {
                 ad2.Save(player2SaveString);
 
             }
+
+            this.gameObject.SetActive(false);
 		}
 	}
 
