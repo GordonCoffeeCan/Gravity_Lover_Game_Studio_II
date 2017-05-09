@@ -17,8 +17,6 @@ public class HubManager : MonoBehaviour {
     
     private float _rotationSpeed = 2;
 
-    private Animator _envPivotAnim;
-
     public static GameObject _level02Portal;
     public static GameObject _level03Portal;
     public static GameObject _level04Portal;
@@ -43,7 +41,6 @@ public class HubManager : MonoBehaviour {
         _level04Portal = GameObject.Find("HubLevel4Portal");
 
         _envPivot = GameObject.Find("EnvPivot").transform;
-        _envPivotAnim = _envPivot.GetComponent<Animator>();
 
         levelExit = new List<Transform>();
         doors = new List<Animator>();
@@ -79,29 +76,28 @@ public class HubManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        NewGameData.tutorialLevelDone = tutorialLevelDone;
+        /*NewGameData.tutorialLevelDone = tutorialLevelDone;
         NewGameData.level02Done = level02Done;
         NewGameData.level03Done = level03Done;
-        NewGameData.level04Done = level04Done;
+        NewGameData.level04Done = level04Done;*/
 
         switch (levelState) {
             case LevelState.level01Finished:
-                _envPivotAnim.SetBool("ToLevel02and03", true);
-                Debug.Log("level01Finished");
+                if(_envPivot.rotation.eulerAngles.z < 90) {
+                    _envPivot.rotation = Quaternion.RotateTowards(_envPivot.rotation, Quaternion.Euler(0, 0, 90), 10 * Time.deltaTime);
+                }
                 break;
             case LevelState.level02And03Finished:
-                _envPivotAnim.SetBool("ToLevel04", true);
-                Debug.Log("level02And03Finished");
+                if (_envPivot.rotation.eulerAngles.z >= 90 && _envPivot.rotation.eulerAngles.z < 180) {
+                    _envPivot.rotation = Quaternion.RotateTowards(_envPivot.rotation, Quaternion.Euler(0, 0, 180), 10 * Time.deltaTime);
+                }
                 break;
             case LevelState.level04Finished:
                 
-                Debug.Log("level04Finished");
                 break;
             default:
                 break;
         }
-        Debug.Log("level02Done:" + NewGameData.level02Done);
-        Debug.Log("level03Done:" + NewGameData.level03Done);
 
         NewGameData.currentEnvPivotAngle = _envPivot.rotation;
 
