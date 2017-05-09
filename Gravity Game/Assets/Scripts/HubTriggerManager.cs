@@ -16,26 +16,28 @@ public class HubTriggerManager : MonoBehaviour {
 	void Update () {
         switch (this.name) {
             case "Door1Trigger":
-                if (playerPREntered == true && playerJPEntered == true) {
-                    HubManager.door1.SetBool("Open", true);
-                }
+                DoorAnim(0, true);
                 break;
             case "Door2Trigger":
-
+                DoorAnim(1, true);
                 break;
             case "Door3Trigger":
-
+                DoorAnim(2, true);
                 break;
             case "Door4Trigger":
-
+                DoorAnim(3, true);
                 break;
             case "Door1CloseTrigger":
+                DoorAnim(0, false);
                 break;
             case "Door2CloseTrigger":
+                DoorAnim(1, false);
                 break;
             case "Door3CloseTrigger":
+                DoorAnim(2, false);
                 break;
             case "Door4CloseTrigger":
+                DoorAnim(3, false);
                 break;
         }
 	}
@@ -57,6 +59,12 @@ public class HubTriggerManager : MonoBehaviour {
 
         if (_col.tag == "Player2") {
             playerJPEntered = false;
+        }
+    }
+
+    private void DoorAnim(int _index, bool _isOpen) {
+        if (playerPREntered == true && playerJPEntered == true) {
+            HubManager.doors[_index].SetBool("Open", _isOpen);
         }
     }
 }

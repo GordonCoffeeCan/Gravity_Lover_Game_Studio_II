@@ -32,8 +32,10 @@ public class HubManager : MonoBehaviour {
         _envPivot = GameObject.Find("EnvPivot").transform;
         _envPivotAnim = _envPivot.GetComponent<Animator>();
 
+        levelExit = new List<Transform>();
+        doors = new List<Animator>();
         for (int i = 0; i < 4; i++) {
-            doors.Add(GameObject.Find("Door" + (i + 1) + "Trigger").GetComponent<Animator>());
+            doors.Add(GameObject.Find("HubLevelDoor" + (i + 1)).transform.GetComponent<Animator>());
             levelExit.Add(GameObject.Find("Level" + (i + 1) + "Exit").transform);
         }
     }
@@ -53,6 +55,7 @@ public class HubManager : MonoBehaviour {
             _playerPR.position = levelExit[3].position;
             _playerJP.position = levelExit[3].position;
         }
+
     }
 	
 	// Update is called once per frame
