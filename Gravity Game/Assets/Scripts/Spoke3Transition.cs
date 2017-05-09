@@ -11,7 +11,7 @@ public class Spoke3Transition : MonoBehaviour {
 
     private bool isSceneLoaded = false;
 
-    private string sceneToLoad;
+    public string sceneToLoad;
 
     public Object sceneToLoad2;
 
@@ -43,7 +43,7 @@ public class Spoke3Transition : MonoBehaviour {
             if (isSceneLoaded == false)
             {
 
-                sceneToLoad = sceneToLoad2.name;
+                //sceneToLoad = sceneToLoad2.name;
 
                 SceneManager.LoadScene(sceneToLoad);
 

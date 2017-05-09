@@ -11,7 +11,7 @@ public class SceneTransitionScript : MonoBehaviour {
 
     private bool isSceneLoaded = false;
 
-	private string sceneToLoad;
+	public string sceneToLoad;
 
     public Object sceneToLoad2;
   
@@ -35,7 +35,7 @@ public class SceneTransitionScript : MonoBehaviour {
 
     void Update (){
 		if (player1Trigger == true && player2Trigger == true) {
-			MixerScript myMixerScript  = GameObject.Find ("MusicSource").GetComponent<MixerScript> ();
+			//MixerScript myMixerScript  = GameObject.Find ("MusicSource").GetComponent<MixerScript> ();
 
 			//myMixerScript.blackFade = true;
 
@@ -64,7 +64,7 @@ public class SceneTransitionScript : MonoBehaviour {
 
 
 
-                sceneToLoad = sceneToLoad2.name;
+               // sceneToLoad = sceneToLoad2.name;
 
                 SceneManager.LoadScene(sceneToLoad);
 
