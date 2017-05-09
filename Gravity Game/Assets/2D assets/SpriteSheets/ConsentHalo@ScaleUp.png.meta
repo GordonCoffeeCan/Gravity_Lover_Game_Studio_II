@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 5771bac13d4fbbb4dbedc0ebec418ef5
-timeCreated: 1494288871
+timeCreated: 1494291312
 licenseType: Pro
 TextureImporter:
   fileIDToRecycleName:
@@ -151,7 +151,7 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 256
         y: 1792
         width: 256
         height: 256
@@ -164,7 +164,7 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_1
       rect:
         serializedVersion: 2
-        x: 256
+        x: 512
         y: 1792
         width: 256
         height: 256
@@ -177,7 +177,7 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_2
       rect:
         serializedVersion: 2
-        x: 512
+        x: 768
         y: 1792
         width: 256
         height: 256
@@ -190,8 +190,8 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_3
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1792
+        x: 0
+        y: 1536
         width: 256
         height: 256
       alignment: 0
@@ -203,7 +203,7 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 256
         y: 1536
         width: 256
         height: 256
@@ -216,7 +216,7 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_5
       rect:
         serializedVersion: 2
-        x: 256
+        x: 512
         y: 1536
         width: 256
         height: 256
@@ -229,7 +229,7 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_6
       rect:
         serializedVersion: 2
-        x: 512
+        x: 768
         y: 1536
         width: 256
         height: 256
@@ -242,8 +242,8 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_7
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1536
+        x: 0
+        y: 1280
         width: 256
         height: 256
       alignment: 0
@@ -255,7 +255,7 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_8
       rect:
         serializedVersion: 2
-        x: 0
+        x: 256
         y: 1280
         width: 256
         height: 256
@@ -268,7 +268,7 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_9
       rect:
         serializedVersion: 2
-        x: 256
+        x: 512
         y: 1280
         width: 256
         height: 256
@@ -281,7 +281,7 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_10
       rect:
         serializedVersion: 2
-        x: 512
+        x: 768
         y: 1280
         width: 256
         height: 256
@@ -294,8 +294,8 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_11
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1280
+        x: 0
+        y: 1024
         width: 256
         height: 256
       alignment: 0
@@ -307,7 +307,7 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_12
       rect:
         serializedVersion: 2
-        x: 0
+        x: 256
         y: 1024
         width: 256
         height: 256
@@ -320,7 +320,7 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_13
       rect:
         serializedVersion: 2
-        x: 256
+        x: 512
         y: 1024
         width: 256
         height: 256
@@ -333,7 +333,7 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_14
       rect:
         serializedVersion: 2
-        x: 512
+        x: 768
         y: 1024
         width: 256
         height: 256
@@ -346,19 +346,6 @@ TextureImporter:
       name: ConsentHalo@ScaleUp_15
       rect:
         serializedVersion: 2
-        x: 768
-        y: 1024
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      tessellationDetail: 0
-    - serializedVersion: 2
-      name: ConsentHalo@ScaleUp_16
-      rect:
-        serializedVersion: 2
         x: 0
         y: 768
         width: 256
@@ -369,7 +356,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ConsentHalo@ScaleUp_17
+      name: ConsentHalo@ScaleUp_16
       rect:
         serializedVersion: 2
         x: 256
@@ -382,7 +369,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ConsentHalo@ScaleUp_18
+      name: ConsentHalo@ScaleUp_17
       rect:
         serializedVersion: 2
         x: 512
@@ -395,7 +382,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ConsentHalo@ScaleUp_19
+      name: ConsentHalo@ScaleUp_18
       rect:
         serializedVersion: 2
         x: 768
@@ -408,7 +395,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ConsentHalo@ScaleUp_20
+      name: ConsentHalo@ScaleUp_19
       rect:
         serializedVersion: 2
         x: 0
@@ -421,7 +408,7 @@ TextureImporter:
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: ConsentHalo@ScaleUp_21
+      name: ConsentHalo@ScaleUp_20
       rect:
         serializedVersion: 2
         x: 256
