@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 {"xpos":"-1.67", "ypos":"4.62", "zpos":"0.1"}
 =======
@@ -7,3 +8,6 @@
 {"xpos":"-169.75", "ypos":"1.27", "zpos":"0.1"}
 >>>>>>> Stashed changes
 >>>>>>> master
+=======
+{"xpos":"-169.75", "ypos":"1.27", "zpos":"0.1"}
+>>>>>>> Stashed changes
