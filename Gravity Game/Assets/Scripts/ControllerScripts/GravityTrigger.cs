@@ -107,12 +107,14 @@ public class GravityTrigger : MonoBehaviour {
 
     void OutRange() {
         if(distance >= separateRange) {
+            DontDestroyOnLoad(GameManager.musicSource);
             SceneManager.LoadScene(currentScene); 
         }
     }
 
     void Restart()
     {
+        DontDestroyOnLoad(GameManager.musicSource);
         SceneManager.LoadScene(currentScene);
     }
 }

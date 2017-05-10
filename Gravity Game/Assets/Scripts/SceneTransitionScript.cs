@@ -65,8 +65,10 @@ public class SceneTransitionScript : MonoBehaviour {
 
 
 
-               // sceneToLoad = sceneToLoad2.name;
-
+                // sceneToLoad = sceneToLoad2.name;
+                if (GameManager.musicSource != null) {
+                    Destroy(GameManager.musicSource.gameObject);
+                }
                 SceneManager.LoadScene(sceneToLoad);
 
                 

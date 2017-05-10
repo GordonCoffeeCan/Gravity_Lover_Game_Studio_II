@@ -24,13 +24,12 @@ public class CheckPointCollision : MonoBehaviour {
     {
         if (player.gameObject.tag == "Player1" || player.gameObject.tag == "Player2")
 		{
-			MixerScript myMixerScript  = GameObject.Find ("MusicSource").GetComponent<MixerScript> ();
 
-            if (myMixerScript != null) {
+            if (GameManager.musicSource != null) {
                 if (player.gameObject.tag == "Player1") {
-                    myMixerScript.PlayerACross = true;
+                    GameManager.musicSource.PlayerACross = true;
                 } else if (player.gameObject.tag == "Player2") {
-                    myMixerScript.PlayerBCross = true;
+                    GameManager.musicSource.PlayerBCross = true;
                 }   
             }
 

@@ -8,9 +8,17 @@ public class GameManager : MonoBehaviour {
 
     public static MixerScript musicSource;
 
+    private void Awake() {
+        if (musicSource == null) {
+            musicSource = GameObject.Find("MusicSource").GetComponent<MixerScript>();
+        } else {
+            MixerScript[] _musicSources = FindObjectsOfType(typeof(MixerScript)) as MixerScript[];
+            _musicSources[1].gameObject.SetActive(false);
+        }
+    }
+
     // Use this for initialization
     void Start () {
-        musicSource = GameObject.Find("MusicSource").GetComponent<MixerScript>();
 
     }
 	
