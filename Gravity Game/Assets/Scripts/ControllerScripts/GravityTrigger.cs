@@ -37,9 +37,7 @@ public class GravityTrigger : MonoBehaviour {
 
     //RedOverLay
 
-    public Image panel; 
-
-
+    public Image panel;
 
     private void Start() {
 

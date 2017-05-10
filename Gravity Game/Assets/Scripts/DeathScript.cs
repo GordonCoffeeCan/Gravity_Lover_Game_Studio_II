@@ -14,8 +14,10 @@ public class DeathScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         currentScene = SceneManager.GetActiveScene().name;
-
-	}
+        if (GameManager.musicSource != null) {
+            //GameManager.musicSource.blackFade = false;
+        }
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -27,10 +29,8 @@ public class DeathScript : MonoBehaviour {
        if(collider.gameObject.tag == "Player1" || collider.gameObject.tag == "Player2")
         {
 
-			MixerScript myMixerScript  = GameObject.Find ("MusicSource").GetComponent<MixerScript> ();
-
-            if(myMixerScript != null) {
-                myMixerScript.blackFade = true;
+            if(GameManager.musicSource != null) {
+                //GameManager.musicSource.blackFade = true;
             }
 
             Invoke("Restart", deathDelay);
@@ -48,6 +48,7 @@ public class DeathScript : MonoBehaviour {
     }
 
     void Restart() {
+        DontDestroyOnLoad(GameManager.musicSource);
         SceneManager.LoadScene(currentScene);
     }
 

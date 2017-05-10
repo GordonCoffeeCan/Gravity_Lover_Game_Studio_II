@@ -6,10 +6,13 @@ public class GameManager : MonoBehaviour {
     public Transform finalEffect;
     private bool particleisThere = false;
 
+    public static MixerScript musicSource;
+
     // Use this for initialization
     void Start () {
-		
-	}
+        musicSource = GameObject.Find("MusicSource").GetComponent<MixerScript>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
