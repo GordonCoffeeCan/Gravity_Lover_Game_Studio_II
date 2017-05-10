@@ -20,28 +20,33 @@ public class MixerScript : MonoBehaviour {
 	void Update () {
 		if (PlayerACross)
 		{
-			PlayerACross = false;
-			PlayerBCross = false;
-			PlayerATheme.Play ();
-			Music2.TransitionTo (3);
-			StartCoroutine (WaitTimeA ());
+          //  if (PlayerACross == true && PlayerBCross == false) {
+
+
+                PlayerACross = false;
+                PlayerBCross = false;
+                PlayerATheme.Play();
+                Music2.TransitionTo(1.4f);
+                StartCoroutine(WaitTimeA());
+          //  }
 		}
 
-		if (PlayerBCross)
-		{
-			PlayerBCross = false;
-			PlayerACross = false;
-			PlayerBTheme.Play ();
-			Music3.TransitionTo (3);
-			StartCoroutine (WaitTimeB ());
-		}
+        if (PlayerBCross) {
+           // if (PlayerACross == false && PlayerBCross == true) {
+                PlayerBCross = false;
+                PlayerACross = false;
+                PlayerBTheme.Play();
+                Music3.TransitionTo(1.4f);
+                StartCoroutine(WaitTimeB());
+          //  }
+        }
 
 		if (blackFade) 
 		{
 			Debug.Log ("fade to black");
 			PlayerBCross = false;
 			PlayerACross = false;
-			FadeToBlack.TransitionTo (2);
+			FadeToBlack.TransitionTo (1f);
 		}
 			
 	}
@@ -50,13 +55,13 @@ public class MixerScript : MonoBehaviour {
 	{
 		int wait_time = Random.Range (8,14);
 		yield return new WaitForSeconds (wait_time);
-		Music1.TransitionTo (3);
+		Music1.TransitionTo (1f);
 	}
 
 	IEnumerator WaitTimeB ()
 	{
 		int wait_time = Random.Range (8,14);
 		yield return new WaitForSeconds (wait_time);
-		Music1.TransitionTo (3);
+		Music1.TransitionTo (1f);
 	}
 	}

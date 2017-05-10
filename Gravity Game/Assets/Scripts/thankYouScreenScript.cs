@@ -12,8 +12,7 @@ public class thankYouScreenScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetKeyDown(KeyCode.Space))
-		{
+		if (Input.GetButtonDown("ShiftButton") || Input.GetButtonDown("GamePad_Shift")) {
 			SceneManager.LoadScene ("startScene");	
 		}
 

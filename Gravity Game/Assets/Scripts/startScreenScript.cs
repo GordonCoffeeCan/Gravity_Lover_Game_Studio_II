@@ -4,8 +4,6 @@ using UnityEngine.SceneManagement;
 
 public class startScreenScript : MonoBehaviour {
 
-    public string sceneToLoad;
-
 	// Use this for initialization
 	void Start () {
 
@@ -13,11 +11,8 @@ public class startScreenScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-
-		if (Input.GetKeyDown(KeyCode.Space))
-		{
-			SceneManager.LoadScene (sceneToLoad);	
-		}
-
+        if (Input.GetButtonDown("ShiftButton") || Input.GetButtonDown("GamePad_Shift")) {
+            SceneManager.LoadScene("tutorialScene");
+        }
 	}
 }
