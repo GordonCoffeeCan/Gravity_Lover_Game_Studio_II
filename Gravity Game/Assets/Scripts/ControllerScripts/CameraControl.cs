@@ -7,7 +7,7 @@ public class CameraControl : MonoBehaviour {
 
     private Transform player1;
     private Transform player2;
-    public float minSize = 7;
+    public float minSize = 15;
 
     private Camera _camera;
     private float _playerDistance;
@@ -34,7 +34,7 @@ public class CameraControl : MonoBehaviour {
             minSize = 20;
             _camera.orthographicSize = Mathf.Clamp(_camera.orthographicSize, 20, 46);
         } else if(SceneManager.GetActiveScene().name != "HubScene") {
-            minSize = 7;
+            minSize = 15;
         }
 
         if (_camera.orthographicSize < minSize) {
