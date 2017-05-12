@@ -32,6 +32,8 @@ public class BinaryControlScript : MonoBehaviour {
     private string _jumpPad;
     private bool isGournd = false;
 
+    private Vector2 _playerCurrentPosition = Vector2.zero;
+
     private bool flipped = false;
 
     public float speedBoost = 5;
@@ -89,6 +91,11 @@ public class BinaryControlScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if(NewGameData.player1isDead == true && NewGameData.player2isDead == true) {
+            this.transform.position = _playerCurrentPosition;
+            return;
+        }
+
         _consentHalo.color = new Color(1, 1, 1, 0);
 
         if (GravityTrigger.inShiftRange == true)
@@ -125,8 +132,6 @@ public class BinaryControlScript : MonoBehaviour {
                 if (NewGameData.isPlayer1ReadytoShift == true && NewGameData.isPlayer2ReadytoShift == true) {
                     _consentHalo.color = new Color(1, 1, 1, 1);
                 }
-
-                Debug.Log(_consentHalo.color);
             }
             else
             {
@@ -211,6 +216,8 @@ public class BinaryControlScript : MonoBehaviour {
         {
             _rig.AddForce(new Vector2(_rig.velocity.x, jump * _rig.gravityScale), ForceMode2D.Impulse);
         }
+
+        _playerCurrentPosition = this.transform.position;
 
     } //end of Update
 

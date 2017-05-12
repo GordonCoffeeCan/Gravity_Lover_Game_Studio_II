@@ -33,15 +33,13 @@ public class DeathScript : MonoBehaviour {
                 //GameManager.musicSource.blackFade = true;
             }
 
-            Invoke("Restart", deathDelay);
-
             player1 = GameObject.FindWithTag("Player1").gameObject;
             player2 = GameObject.FindWithTag("Player2").gameObject;
 
             player1.SetActive(false);
             player2.SetActive(false);
 
-
+            Invoke("Restart", deathDelay);
         }
             
 
