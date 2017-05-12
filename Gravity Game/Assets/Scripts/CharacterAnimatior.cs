@@ -30,6 +30,10 @@ public class CharacterAnimatior : MonoBehaviour {
     // Update is called once per frame
     void Update() {
 
+        if (NewGameData.player1isDead == true || NewGameData.player2isDead == true) {
+            return;
+        }
+
         if ((_rig.velocity.x * _rig.gravityScale) > 0) {
             _anim.SetFloat("Speed", 1);
             _anim.SetLayerWeight(1, 0);

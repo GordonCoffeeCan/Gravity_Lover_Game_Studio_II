@@ -96,22 +96,12 @@ public class GravityTrigger : MonoBehaviour {
     {
         if (distance <= range)
         {
-
             inShiftRange = true;
-
-            
-            
         }
         else
         {
-
             inShiftRange = false;
-
-            
         }
-
-      
-
     }
 
     void OutRange() {

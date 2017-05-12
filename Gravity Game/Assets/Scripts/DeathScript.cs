@@ -8,8 +8,11 @@ public class DeathScript : MonoBehaviour {
     private string currentScene;
 
     public float deathDelay = 1.0f;
-    private GameObject player1;
-    private GameObject player2;
+    private Transform player1;
+    private Transform player2;
+
+    private Animator _player1Anim;
+    private Animator _player2Anim;
 
 	// Use this for initialization
 	void Start () {
@@ -17,6 +20,18 @@ public class DeathScript : MonoBehaviour {
         if (GameManager.musicSource != null) {
             //GameManager.musicSource.blackFade = false;
         }
+
+        player1 = GameObject.FindWithTag("Player1").transform;
+        player2 = GameObject.FindWithTag("Player2").transform;
+
+        _player1Anim = player1.FindChild("SpriteHolder/CharacterSprite").GetComponent<Animator>();
+        _player2Anim = player2.FindChild("SpriteHolder/CharacterSprite").GetComponent<Animator>();
+
+        _player1Anim.SetBool("DeathByBurn", false);
+        _player2Anim.SetBool("DeathByBurn", false);
+
+        NewGameData.player1isDead = false;
+        NewGameData.player2isDead = false;
     }
 	
 	// Update is called once per frame
@@ -33,16 +48,30 @@ public class DeathScript : MonoBehaviour {
                 //GameManager.musicSource.blackFade = true;
             }
 
-            player1 = GameObject.FindWithTag("Player1").gameObject;
-            player2 = GameObject.FindWithTag("Player2").gameObject;
+            //player1.gameObject.SetActive(false);
+            //player2.gameObject.SetActive(false);
 
-            player1.SetActive(false);
-            player2.SetActive(false);
-
-            Invoke("Restart", deathDelay);
+            if (collider.gameObject.tag == "Player1") {
+                PlayerBurned(_player1Anim);
+            }else if (collider.gameObject.tag == "Player2") {
+                PlayerBurned(_player2Anim);
+            }
         }
-            
 
+        NewGameData.player1isDead = true;
+        NewGameData.player2isDead = true;
+    }
+
+    private void PlayerBurned(Animator _anim) {
+        _anim.SetBool("DeathByBurn", true);
+
+        Invoke("Restart", 0.5f);
+    }
+
+    private void BlackFadeOut() {
+        GameObject.Find("GameManager").GetComponent<GravityTrigger>().BlackCover.SetTrigger("CoverScene");
+
+        Invoke("Restart", 0.5f);
     }
 
     void Restart() {
