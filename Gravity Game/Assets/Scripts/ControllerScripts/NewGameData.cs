@@ -17,6 +17,9 @@ public class NewGameData : MonoBehaviour {
 
     public static string previousLevelName = null;
 
+    public static bool player1isDead = false;
+    public static bool player2isDead = false;
+
     public static Quaternion currentEnvPivotAngle;
 
     // Use this for initialization

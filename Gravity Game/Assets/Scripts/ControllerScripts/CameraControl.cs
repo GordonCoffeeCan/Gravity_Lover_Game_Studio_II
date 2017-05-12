@@ -11,7 +11,8 @@ public class CameraControl : MonoBehaviour {
 
     private Camera _camera;
     private float _playerDistance;
-    
+
+    private float _currentCamSize;
 
     private void Awake() {
         _camera = Camera.main;
@@ -26,9 +27,15 @@ public class CameraControl : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        _playerDistance = Vector3.Distance(player1.position, player2.position);
-        _camera.transform.position = new Vector3((player1.position.x + player2.position.x) / 2, (player1.position.y + player2.position.y) / 2, _camera.transform.position.z);
-        _camera.orthographicSize = _playerDistance * 0.65f;
+        if (NewGameData.player1isDead == false && NewGameData.player2isDead == false) {
+            _currentCamSize = _camera.orthographicSize;
+            _playerDistance = Vector3.Distance(player1.position, player2.position);
+            _camera.transform.position = new Vector3((player1.position.x + player2.position.x) / 2, (player1.position.y + player2.position.y) / 2, _camera.transform.position.z);
+            _camera.orthographicSize = _playerDistance * 0.65f;
+        } else {
+            _camera.orthographicSize = _currentCamSize;
+        }
+        
 
         if (SceneManager.GetActiveScene().name == "HubScene") {
             minSize = 20;
