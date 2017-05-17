@@ -7,6 +7,7 @@ public class startScreenScript : MonoBehaviour {
 
     public Animator BlackCover;
     public Image panel;
+	public AudioSource startButton;
 
     // Use this for initialization
     void Start () {
@@ -17,6 +18,7 @@ public class startScreenScript : MonoBehaviour {
 	void Update () {
         if (Input.GetButtonDown("ShiftButton") || Input.GetButtonDown("GamePad_Shift")) {
             BlackFadeOut();
+			startButton.Play ();
             Invoke("startGame", 1);
         }
 	}
