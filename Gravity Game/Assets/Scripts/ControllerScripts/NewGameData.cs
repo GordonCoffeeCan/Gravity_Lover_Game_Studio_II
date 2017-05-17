@@ -10,8 +10,8 @@ public class NewGameData : MonoBehaviour {
     public static float player1GravityScale = 1;
     public static float player2GravityScale = -1;
 
-    public static bool tutorialLevelDone = false;
-    public static bool level02Done = false;
+    public static bool tutorialLevelDone = true;
+    public static bool level02Done = true;
     public static bool level03Done = false;
     public static bool level04Done = false;
 
