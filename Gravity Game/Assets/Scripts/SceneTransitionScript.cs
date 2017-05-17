@@ -1,9 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class SceneTransitionScript : MonoBehaviour {
+
+    public Animator BlackCover;
+    public Image panel;
+    public float colorLerpTime = 3;
+    private float time = 0;
+
 
 	public bool player1Trigger = false;
 
@@ -56,8 +63,17 @@ public class SceneTransitionScript : MonoBehaviour {
             player1.gameObject.SetActive(false);
             player2.gameObject.SetActive(false);
 
-            this.gameObject.GetComponent<SpriteRenderer>().color = Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time, 4));
+            // this.gameObject.GetComponent<SpriteRenderer>().color = Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time, 4));
+            this.gameObject.GetComponent<SpriteRenderer>().color = Color.Lerp(Color.white, Color.black, 30);
+
+            if (time < 3)
+            {
+                time += Time.deltaTime / colorLerpTime;
+            }
+
             particle.SetActive(false);
+
+            Invoke("BlackFadeOut", 1);
 
         }
 	}
@@ -86,6 +102,16 @@ public class SceneTransitionScript : MonoBehaviour {
 			player2Trigger = false;
 		}
 	}
+
+    private void BlackFadeOut()
+    {
+        BlackCover.SetTrigger("CoverScene");
+        panel.color = new Color(1, 1, 1, Mathf.Lerp(panel.color.a, 0, 13 * Time.deltaTime));
+
+        
+
+
+    }
 
     void sceneChange()
     {
