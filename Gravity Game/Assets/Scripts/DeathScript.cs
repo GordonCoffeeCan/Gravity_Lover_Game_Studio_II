@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class DeathScript : MonoBehaviour {
 
     private string currentScene;
-	private GameObject deathSFX;
+	
     public float deathDelay = 1.0f;
     private Transform player1;
     private Transform player2;
@@ -14,8 +14,11 @@ public class DeathScript : MonoBehaviour {
     private Animator _player1Anim;
     private Animator _player2Anim;
 
-	// Use this for initialization
-	void Start () {
+
+    private AudioSource deathSFXSound;
+
+    // Use this for initialization
+    void Start () {
         currentScene = SceneManager.GetActiveScene().name;
         if (GameManager.musicSource != null) {
             //GameManager.musicSource.blackFade = false;
@@ -32,11 +35,14 @@ public class DeathScript : MonoBehaviour {
 
         NewGameData.player1isDead = false;
         NewGameData.player2isDead = false;
+
+        deathSFXSound = GameObject.FindGameObjectWithTag("DeathSFX").GetComponent<AudioSource>();
     }
 	
 	// Update is called once per frame
 	void Update () {
-		
+
+        
 	}
 
     void OnCollisionEnter2D(Collision2D collider)
@@ -53,8 +59,14 @@ public class DeathScript : MonoBehaviour {
 
             if (collider.gameObject.tag == "Player1") {
                 PlayerBurned(_player1Anim);
+
+                deathSFXSound.Play();
+                
             }else if (collider.gameObject.tag == "Player2") {
                 PlayerBurned(_player2Anim);
+
+
+                deathSFXSound.Play();
             }
         }
 

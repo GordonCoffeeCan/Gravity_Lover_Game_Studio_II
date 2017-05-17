@@ -33,9 +33,12 @@ public class GravityTrigger : MonoBehaviour {
 
     private string _tag;
 
+
+    private AudioSource deathSFXSound;
+
     //camerShake
 
-   
+
 
     //CameraShakeEnd
 
@@ -63,6 +66,8 @@ public class GravityTrigger : MonoBehaviour {
         NewGameData.player1isDead = false;
         NewGameData.player2isDead = false;
 
+
+        deathSFXSound = GameObject.FindGameObjectWithTag("DeathSFX").GetComponent<AudioSource>();
     }
 
     // Use this for initialization
@@ -70,7 +75,7 @@ public class GravityTrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+
         distance = Vector3.Distance(player1.position, player2.position);
         middlePoint = (player1.position + player2.position) / 2;
 
@@ -107,6 +112,8 @@ public class GravityTrigger : MonoBehaviour {
     void OutRange() {
         if(distance >= separateRange) {
 
+         deathSFXSound.Play();
+
             _player1Anim.SetBool("DeathBySeperate", true);
             _player2Anim.SetBool("DeathBySeperate", true);
 
@@ -121,6 +128,7 @@ public class GravityTrigger : MonoBehaviour {
         BlackCover.SetTrigger("CoverScene");
         panel.color = new Color(1, 1, 1, Mathf.Lerp(panel.color.a, 0, 13 * Time.deltaTime));
         Invoke("Restart", 0.5f);
+        
     }
 
     void Restart()

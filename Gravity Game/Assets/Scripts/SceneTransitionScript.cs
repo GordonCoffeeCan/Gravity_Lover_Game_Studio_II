@@ -27,10 +27,13 @@ public class SceneTransitionScript : MonoBehaviour {
     public GameObject player1SpawnPoint;
     public GameObject player2SpawnPoint;
 
+    private AudioSource gameEndSFX;
 
 
     private void Awake() {
         isSceneLoaded = false;
+
+        gameEndSFX = GameObject.FindGameObjectWithTag("LevelEndSFX").GetComponent<AudioSource>();
     }
 
     void Update (){
@@ -117,5 +120,11 @@ public class SceneTransitionScript : MonoBehaviour {
 			player2Trigger = false;
 		}
 	}
+
+    void sceneChange()
+    {
+
+    }
 		
 }
+
