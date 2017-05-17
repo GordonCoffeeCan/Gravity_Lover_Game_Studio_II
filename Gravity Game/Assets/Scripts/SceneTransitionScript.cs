@@ -44,8 +44,9 @@ public class SceneTransitionScript : MonoBehaviour {
 
     void Update (){
 		if (player1Trigger == true && player2Trigger == true) {
-
+			GameManager.musicSource.blackFade = true;
             gameEndSFX.Play();
+
 
             Invoke("sceneChange", 4);
 
