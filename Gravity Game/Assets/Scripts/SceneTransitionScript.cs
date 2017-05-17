@@ -13,6 +13,9 @@ public class SceneTransitionScript : MonoBehaviour {
 
 	public string sceneToLoad;
 
+    private GameObject player1;
+    private GameObject player2;
+
    // public Object sceneToLoad2;
   
 
@@ -28,12 +31,15 @@ public class SceneTransitionScript : MonoBehaviour {
     public GameObject player2SpawnPoint;
 
     private AudioSource gameEndSFX;
+    private GameObject particle;
 
 
     private void Awake() {
         isSceneLoaded = false;
 
         gameEndSFX = GameObject.FindGameObjectWithTag("LevelEndSFX").GetComponent<AudioSource>();
+
+        particle = this.gameObject.transform.GetChild(0).gameObject;
     }
 
     void Update (){
@@ -42,8 +48,17 @@ public class SceneTransitionScript : MonoBehaviour {
             gameEndSFX.Play();
 
             Invoke("sceneChange", 4);
-           
-		}
+
+            player1 = GameObject.FindGameObjectWithTag("Player1").gameObject;
+            player2 = GameObject.FindGameObjectWithTag("Player2").gameObject;
+
+            player1.gameObject.SetActive(false);
+            player2.gameObject.SetActive(false);
+
+            this.gameObject.GetComponent<SpriteRenderer>().color = Color.Lerp(Color.white, Color.black, Mathf.PingPong(Time.time, 4));
+            particle.SetActive(false);
+
+        }
 	}
 
 	void OnTriggerEnter2D(Collider2D other)
