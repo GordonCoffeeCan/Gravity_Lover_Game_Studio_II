@@ -26,6 +26,7 @@ public class pause : MonoBehaviour {
 
             NewGameData.paused = true;
 
+            //Debug.Log(NewGameData.paused);
         }
 
         if (paused == false)
@@ -33,16 +34,21 @@ public class pause : MonoBehaviour {
             quitButton.gameObject.SetActive(false);
 
             NewGameData.paused = false;
-        }
-       
+           // Debug.Log(NewGameData.paused);
+        } 
+   
+        Debug.Log(NewGameData.paused);
     }
 
     void OnGUI()
     {
         if (paused)
         {
+            
+
             quitButton.enabled = true;
             GUILayout.Label("Game is paused!");
+        
             if (GUILayout.Button("Click me to unpause"))
             { paused = togglePause(); }
 
@@ -50,8 +56,6 @@ public class pause : MonoBehaviour {
             {
                 paused = togglePause();
             }
-
-         
 
             
         }
@@ -63,6 +67,8 @@ public class pause : MonoBehaviour {
         {
             Time.timeScale = 1f;
             return (false);
+
+            
             
         }
         else
