@@ -1,12 +1,18 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 6722391bde5ae984f89dc2d6066d1685
 timeCreated: 1495032525
+=======
+guid: ef91c8fe46ae94d16a7f6691e23a9752
+timeCreated: 1495032034
+>>>>>>> master
 licenseType: Free
 VideoClipImporter:
   serializedVersion: 2
   useLegacyImporter: 0
   quality: 0.5
   isColorLinear: 0
+<<<<<<< HEAD
   originalWidth: 1280
   originalHeight: 720
   frameRange: 0
@@ -17,6 +23,18 @@ VideoClipImporter:
   colorSpace: 0
   deinterlace: 0
   sourceFileSize: 8777495
+=======
+  originalWidth: 1920
+  originalHeight: 1080
+  frameRange: 0
+  startFrame: -1
+  endFrame: -1
+  frameCount: 900
+  frameRate: 30
+  colorSpace: 0
+  deinterlace: 0
+  sourceFileSize: 44964699
+>>>>>>> master
   encodeAlpha: 0
   sourceHasAlpha: 0
   flipVertical: 0
@@ -26,12 +44,17 @@ VideoClipImporter:
   sourceAudioSampleRate: 80bb0000
   targetSettings: {}
   output:
+<<<<<<< HEAD
     format: 1
+=======
+    format: 0
+>>>>>>> master
     settings:
       enableTranscoding: 0
       codec: 0
       resizeFormat: 0
       aspectRatio: 0
+<<<<<<< HEAD
       customWidth: 1280
       customHeight: 720
       bitrateMode: 2
@@ -44,6 +67,20 @@ VideoClipImporter:
       source: 
       offset: 0
       size: 8777495
+=======
+      customWidth: 1920
+      customHeight: 1080
+      bitrateMode: 2
+      spatialQuality: 2
+    encodedWidth: 1920
+    encodedHeight: 1080
+    encodedStartFrame: 0
+    encodedEndFrame: 900
+    streamedResource:
+      source: 
+      offset: 0
+      size: 44964699
+>>>>>>> master
   userData: 
   assetBundleName: 
   assetBundleVariant: 
