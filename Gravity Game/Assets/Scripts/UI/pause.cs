@@ -7,7 +7,7 @@ public class pause : MonoBehaviour {
 
     bool paused = false;
 
-    public Button quitButton;
+    public Image quitButton;
     
 
     void Start()
@@ -47,10 +47,7 @@ public class pause : MonoBehaviour {
             
 
             quitButton.enabled = true;
-            GUILayout.Label("Game is paused!");
-        
-            if (GUILayout.Button("Click me to unpause"))
-            { paused = togglePause(); }
+          
 
             if (Input.GetButtonDown("Fire1"))
             {
