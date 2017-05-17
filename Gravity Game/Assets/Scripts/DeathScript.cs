@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class DeathScript : MonoBehaviour {
 
     private string currentScene;
-
+	private GameObject deathSFX;
     public float deathDelay = 1.0f;
     private Transform player1;
     private Transform player2;

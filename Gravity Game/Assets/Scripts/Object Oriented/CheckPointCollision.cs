@@ -22,16 +22,15 @@ public class CheckPointCollision : MonoBehaviour {
     // Update is called once per frame
     void OnTriggerEnter2D(Collider2D player)
     {
-        if (player.gameObject.tag == "Player1" || player.gameObject.tag == "Player2")
-		{
+		if (player.gameObject.tag == "Player1" || player.gameObject.tag == "Player2") {
 
-            if (GameManager.musicSource != null) {
-                if (player.gameObject.tag == "Player1") {
-                    GameManager.musicSource.PlayerACross = true;
-                } else if (player.gameObject.tag == "Player2") {
-                    GameManager.musicSource.PlayerBCross = true;
-                }   
-            }
+//			if (GameManager.musicSource != null) {
+//				if (player.gameObject.tag == "Player1") {
+//					GameManager.musicSource.PlayerACross = true;
+//				} else if (player.gameObject.tag == "Player2") {
+//					GameManager.musicSource.PlayerBCross = true;
+//				}   
+//			}
 
             pos1 = player1SpawnPoint.transform.position;
             pos2 = player2SpawnPoint.transform.position;

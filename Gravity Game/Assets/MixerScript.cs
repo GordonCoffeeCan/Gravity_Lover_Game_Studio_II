@@ -26,7 +26,7 @@ public class MixerScript : MonoBehaviour {
                 PlayerACross = false;
                 PlayerBCross = false;
                 PlayerATheme.Play();
-                Music2.TransitionTo(1.4f);
+                Music2.TransitionTo(1f);
                 StartCoroutine(WaitTimeA());
           //  }
 		}
@@ -36,7 +36,7 @@ public class MixerScript : MonoBehaviour {
                 PlayerBCross = false;
                 PlayerACross = false;
                 PlayerBTheme.Play();
-                Music3.TransitionTo(1.4f);
+                Music3.TransitionTo(1f);
                 StartCoroutine(WaitTimeB());
           //  }
         }
@@ -53,14 +53,14 @@ public class MixerScript : MonoBehaviour {
 
 	IEnumerator WaitTimeA ()
 	{
-		int wait_time = Random.Range (8,14);
+		int wait_time = Random.Range (10,15);
 		yield return new WaitForSeconds (wait_time);
 		Music1.TransitionTo (1f);
 	}
 
 	IEnumerator WaitTimeB ()
 	{
-		int wait_time = Random.Range (8,14);
+		int wait_time = Random.Range (10,15);
 		yield return new WaitForSeconds (wait_time);
 		Music1.TransitionTo (1f);
 	}
