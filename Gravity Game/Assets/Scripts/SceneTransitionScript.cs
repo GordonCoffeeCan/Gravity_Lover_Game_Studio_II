@@ -44,11 +44,11 @@ public class SceneTransitionScript : MonoBehaviour {
 
     void Update (){
 		if (player1Trigger == true && player2Trigger == true) {
-			GameManager.musicSource.blackFade = true;
+
             gameEndSFX.Play();
 
-
             Invoke("sceneChange", 4);
+
 
             player1 = GameObject.FindGameObjectWithTag("Player1").gameObject;
             player2 = GameObject.FindGameObjectWithTag("Player2").gameObject;
