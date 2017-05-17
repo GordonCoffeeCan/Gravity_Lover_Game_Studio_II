@@ -39,60 +39,10 @@ public class SceneTransitionScript : MonoBehaviour {
     void Update (){
 		if (player1Trigger == true && player2Trigger == true) {
 
-            if(isSceneLoaded == false) {
+            gameEndSFX.Play();
 
-                if(SceneManager.GetActiveScene().name== "tutorialScene")
-                {
-                    NewGameData.previousLevelName = "tutorialScene";
-                    NewGameData.tutorialLevelDone = true;
-                }
-
-                if (SceneManager.GetActiveScene().name == "SpokeOnePrototype")
-                {
-                    NewGameData.previousLevelName = "SpokeOnePrototype";
-                    NewGameData.level02Done = true;
-                }
-
-                if (SceneManager.GetActiveScene().name == "SpokeTwoPrototype")
-                {
-                    NewGameData.previousLevelName = "SpokeTwoPrototype";
-                    NewGameData.level03Done = true;
-                }
-
-                if (SceneManager.GetActiveScene().name == "SpokeThreePrototype")
-                {
-                    NewGameData.previousLevelName = "SpokeThreePrototype";
-                    NewGameData.level04Done = true;
-                }
-
-
-
-
-                // sceneToLoad = sceneToLoad2.name;
-                if (GameManager.musicSource != null) {
-                    Destroy(GameManager.musicSource.gameObject);
-                }
-                SceneManager.LoadScene(sceneToLoad);
-
-                
-
-                isSceneLoaded = true;
-                Debug.Log("Scene: " + sceneToLoad + " is loaded!");
-
-
-                //Resetting the Scene
-                pos1 = player1SpawnPoint.transform.position;
-                pos2 = player2SpawnPoint.transform.position;
-
-                PlayerLoaderData ad = new PlayerLoaderData(pos1);
-                PlayerLoaderData ad2 = new PlayerLoaderData(pos2);
-
-                ad.Save(player1SaveString);
-                ad2.Save(player2SaveString);
-
-            }
-
-            this.gameObject.SetActive(false);
+            Invoke("sceneChange", 4);
+           
 		}
 	}
 
@@ -123,7 +73,62 @@ public class SceneTransitionScript : MonoBehaviour {
 
     void sceneChange()
     {
+        if (isSceneLoaded == false)
+        {
 
+            if (SceneManager.GetActiveScene().name == "tutorialScene")
+            {
+                NewGameData.previousLevelName = "tutorialScene";
+                NewGameData.tutorialLevelDone = true;
+            }
+
+            if (SceneManager.GetActiveScene().name == "SpokeOnePrototype")
+            {
+                NewGameData.previousLevelName = "SpokeOnePrototype";
+                NewGameData.level02Done = true;
+            }
+
+            if (SceneManager.GetActiveScene().name == "SpokeTwoPrototype")
+            {
+                NewGameData.previousLevelName = "SpokeTwoPrototype";
+                NewGameData.level03Done = true;
+            }
+
+            if (SceneManager.GetActiveScene().name == "SpokeThreePrototype")
+            {
+                NewGameData.previousLevelName = "SpokeThreePrototype";
+                NewGameData.level04Done = true;
+            }
+
+
+
+
+            // sceneToLoad = sceneToLoad2.name;
+            if (GameManager.musicSource != null)
+            {
+                Destroy(GameManager.musicSource.gameObject);
+            }
+            SceneManager.LoadScene(sceneToLoad);
+
+
+
+            isSceneLoaded = true;
+            Debug.Log("Scene: " + sceneToLoad + " is loaded!");
+
+
+            //Resetting the Scene
+            pos1 = player1SpawnPoint.transform.position;
+            pos2 = player2SpawnPoint.transform.position;
+
+            PlayerLoaderData ad = new PlayerLoaderData(pos1);
+            PlayerLoaderData ad2 = new PlayerLoaderData(pos2);
+
+            ad.Save(player1SaveString);
+            ad2.Save(player2SaveString);
+
+        }
+
+        this.gameObject.SetActive(false);
     }
 		
 }
