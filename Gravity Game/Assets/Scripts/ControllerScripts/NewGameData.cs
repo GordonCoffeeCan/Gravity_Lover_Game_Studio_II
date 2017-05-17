@@ -22,6 +22,9 @@ public class NewGameData : MonoBehaviour {
 
     public static Quaternion currentEnvPivotAngle;
 
+
+    public static bool paused = false;
+
     // Use this for initialization
     void Start () {
 		

@@ -18,29 +18,46 @@ public class pause : MonoBehaviour {
 
     void Update()
     {
-        if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Menu"))
         {
             paused = togglePause();
 
             quitButton.gameObject.SetActive(true);
 
+            NewGameData.paused = true;
+
+            //Debug.Log(NewGameData.paused);
         }
 
         if (paused == false)
         {
             quitButton.gameObject.SetActive(false);
-        }
-       
+
+            NewGameData.paused = false;
+           // Debug.Log(NewGameData.paused);
+        } 
+   
+        Debug.Log(NewGameData.paused);
     }
 
     void OnGUI()
     {
         if (paused)
         {
+            
+
             quitButton.enabled = true;
             GUILayout.Label("Game is paused!");
+        
             if (GUILayout.Button("Click me to unpause"))
+            { paused = togglePause(); }
+
+            if (Input.GetButtonDown("Fire1"))
+            {
                 paused = togglePause();
+            }
+
+            
         }
     }
 
@@ -50,6 +67,8 @@ public class pause : MonoBehaviour {
         {
             Time.timeScale = 1f;
             return (false);
+
+            
             
         }
         else

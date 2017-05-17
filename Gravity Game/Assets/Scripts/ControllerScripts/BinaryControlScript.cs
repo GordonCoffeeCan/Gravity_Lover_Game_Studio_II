@@ -91,6 +91,10 @@ public class BinaryControlScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (NewGameData.paused == true) {
+            return;
+        }
+
         if(NewGameData.player1isDead == true || NewGameData.player2isDead == true) {
             this.transform.position = _playerCurrentPosition;
             return;

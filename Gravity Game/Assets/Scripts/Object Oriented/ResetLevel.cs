@@ -44,6 +44,14 @@ public class ResetLevel : MonoBehaviour {
         }
 
 
+        if (NewGameData.paused == true)
+        {
+            if (Input.GetButtonDown("Quit"))
+            {
+                Debug.Log("Quit it!");
+                Reset();
+            }
+        }
             
     }
 
