@@ -29,7 +29,7 @@ public class VideoController : MonoBehaviour {
         }
 
         _videoPlayer = this.GetComponent<VideoPlayer>();
-
+        _audioSource = this.GetComponent<AudioSource>();
 
         _videoPlayer.source = VideoSource.VideoClip;
 
@@ -49,6 +49,7 @@ public class VideoController : MonoBehaviour {
     }
 
     private void Loadcene() {
+        _audioSource.clip = null;
         switch (_currentClipIndex) {
             case 0:
                 SceneManager.LoadScene("tutorialScene");

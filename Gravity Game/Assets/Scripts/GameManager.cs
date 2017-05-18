@@ -19,7 +19,7 @@ public class GameManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-
+        musicSource.GetComponent<AudioSource>().Play();
     }
 	
 	// Update is called once per frame

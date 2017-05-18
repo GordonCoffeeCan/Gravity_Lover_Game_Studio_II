@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: ee9ed6db126eff14fa2eb26320f4b79c
+timeCreated: 1495119046
+licenseType: Pro
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - Music1: {fileID: 24500006, guid: ff6ec1d396f664abb85edf4b7ebaa83f, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

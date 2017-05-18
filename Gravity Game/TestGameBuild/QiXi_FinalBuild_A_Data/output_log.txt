@@ -29,22 +29,9 @@ Platform assembly: D:\Documents\NYU_GameStudio_II_Spring_2017\Gravity_Lover_Game
 Loading D:\Documents\NYU_GameStudio_II_Spring_2017\Gravity_Lover_Game_Studio_II\Gravity Game\TestGameBuild\QiXi_FinalBuild_A_Data\Managed\DOTween50.dll into Unity Child Domain
 Platform assembly: D:\Documents\NYU_GameStudio_II_Spring_2017\Gravity_Lover_Game_Studio_II\Gravity Game\TestGameBuild\QiXi_FinalBuild_A_Data\Managed\ICSharpCode.SharpZipLib.dll (this message is harmless)
 Loading D:\Documents\NYU_GameStudio_II_Spring_2017\Gravity_Lover_Game_Studio_II\Gravity Game\TestGameBuild\QiXi_FinalBuild_A_Data\Managed\ICSharpCode.SharpZipLib.dll into Unity Child Domain
-- Completed reload, in  0.019 seconds
+- Completed reload, in  0.037 seconds
 Platform assembly: D:\Documents\NYU_GameStudio_II_Spring_2017\Gravity_Lover_Game_Studio_II\Gravity Game\TestGameBuild\QiXi_FinalBuild_A_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: D:\Documents\NYU_GameStudio_II_Spring_2017\Gravity_Lover_Game_Studio_II\Gravity Game\TestGameBuild\QiXi_FinalBuild_A_Data\Managed\System.dll (this message is harmless)
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-<RI> Initialized touch support.
-UnloadTime: 1.892345 ms
-Setting up 4 worker threads for Enlighten.
-  Thread -> id: 1e324 -> priority: 1 
-  Thread -> id: 1a064 -> priority: 1 
-  Thread -> id: 1c3ac -> priority: 1 
-  Thread -> id: 67b8 -> priority: 1 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 4.359111 ms
-
-Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 1433.
-Total: 0.489876 ms (FindLiveObjects: 0.080592 ms CreateObjectMapping: 0.041876 ms MarkObjects: 0.350419 ms  DeleteObjects: 0.016197 ms)
-
