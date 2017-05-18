@@ -32,6 +32,6 @@ public class startScreenScript : MonoBehaviour {
 
     void startGame()
     {
-        SceneManager.LoadScene("tutorialScene");
+        SceneManager.LoadScene("CutSceneScene");
     }
 }

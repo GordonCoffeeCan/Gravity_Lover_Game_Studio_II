@@ -34,10 +34,7 @@ public class pause : MonoBehaviour {
             quitButton.gameObject.SetActive(false);
 
             NewGameData.paused = false;
-           // Debug.Log(NewGameData.paused);
         } 
-   
-        Debug.Log(NewGameData.paused);
     }
 
     void OnGUI()
