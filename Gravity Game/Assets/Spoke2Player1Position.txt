@@ -1,5 +1,1 @@
-<<<<<<< Updated upstream
-{"xpos":"48.20302", "ypos":"-31.22132", "zpos":"0.1"}
-=======
 {"xpos":"-47.61438", "ypos":"-22.97577", "zpos":"0.1004232"}
->>>>>>> Stashed changes
