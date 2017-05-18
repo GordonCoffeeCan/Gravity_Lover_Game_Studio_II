@@ -44,6 +44,10 @@ public class Spoke3Transition : MonoBehaviour {
             {
 
                 //sceneToLoad = sceneToLoad2.name;
+                NewGameData.tutorialLevelDone = true;
+                NewGameData.level02Done = true;
+                NewGameData.level03Done = true;
+                NewGameData.level04Done = true;
 
                 SceneManager.LoadScene(sceneToLoad);
 

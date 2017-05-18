@@ -1,7 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< Updated upstream
 guid: c307c284d6cedc7458a0d46667ae63d9
 timeCreated: 1495072818
 licenseType: Pro
+=======
+guid: 4115b92e7d1aa444e9cc133d2f1ad47b
+timeCreated: 1495072960
+licenseType: Free
+>>>>>>> Stashed changes
 DefaultImporter:
   userData: 
   assetBundleName: 

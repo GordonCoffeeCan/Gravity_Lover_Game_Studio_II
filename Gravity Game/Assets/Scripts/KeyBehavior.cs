@@ -25,7 +25,7 @@ public class KeyBehavior : MonoBehaviour {
             if(sceneName == "SpokeTwoPrototype") {
                 if(doorA != null) {
                     doorA.SetBool("Open", true);
-                    keySFX.Play ();
+                    //keySFX.Play ();
                 }
             }
 
@@ -37,7 +37,7 @@ public class KeyBehavior : MonoBehaviour {
             if (sceneName == "SpokeTwoPrototype") {
                 if (doorB != null) {
                     doorB.SetBool("Open", true);
-                    keySFX.Play ();
+                    //keySFX.Play ();
                 }
             }
 
