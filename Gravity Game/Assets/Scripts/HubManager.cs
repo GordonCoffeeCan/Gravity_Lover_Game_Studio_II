@@ -85,10 +85,10 @@ public class HubManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        /*NewGameData.tutorialLevelDone = tutorialLevelDone;
+        NewGameData.tutorialLevelDone = tutorialLevelDone;
         NewGameData.level02Done = level02Done;
         NewGameData.level03Done = level03Done;
-        NewGameData.level04Done = level04Done;*/
+        NewGameData.level04Done = level04Done;
 
         switch (levelState) {
             case LevelState.level01Finished:
