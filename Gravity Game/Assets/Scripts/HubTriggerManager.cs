@@ -9,7 +9,7 @@ public class HubTriggerManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-
+		GameManager.musicSource.Music1.TransitionTo(1f);
     }
 	
 	// Update is called once per frame
